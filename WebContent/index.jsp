@@ -10,14 +10,13 @@
 	</head>
 	<body>
 		<header>
-			<div id = "d1">
-			<!-- img width = "80" src="http://blogfiles.naver.net/20120126_56/chungdamah_1327560620605fLfCq_JPEG/%BB%E7%C1%F8_092.jpg" -->
-			</div>
+				<img width = "200" height = "80" float = left src="http://blogfiles.naver.net/MjAxODAyMjhfMTc4/MDAxNTE5NzQ0MDA0MjU2.UkoBQg_qlKF7JI1QTga9Ayt_9Dose1j2cI6nbh2Q1kYg.DHAS_0aVUt_GE2OTt2stp7rE31cofj4Xwe0YTSfuVrMg.JPEG.wapper12001/bitcoin-1-300x225.jpg">
+				<h1>코인웹</h1>
 		</header>
-		<h1>3세대 블록체인 EOS와 ADA 비교 연구</h1>
+		
 		<!-- <i class="material-icons">cloud</i> -->
 		<nav>
-			<a href="#s1">[header]</a>&nbsp;&nbsp;
+			<a href="#s1"><i class="material-icons">cloud</i></a>&nbsp;&nbsp;
 			<a href="#s2">[nav]</a>&nbsp;&nbsp;
 			<a href="#s3">[section]</a>&nbsp;&nbsp;
 			<a href="#s4">[article]</a>&nbsp;&nbsp;
@@ -25,7 +24,7 @@
 			<a href="#s6">[footer]</a>&nbsp;&nbsp;
 		</nav>
 		<section class="c1" id = "s1">
-			<h1>header</h1>
+			<h2>header</h2>
 			<ol>
 			<li>페이지의 머가리</li>
 			<li>페이지 제목, 페이지를 소개하는 간단한 섹션</li>
@@ -35,32 +34,32 @@
 			</div>
 		</section>
 		<section id = "s2">
-			<h1>nav</h1>
+			<h2>nav</h2>
 			<ul>
 			<li>하이퍼링크들을 모아 놓은 특별한 섹션</li>
 			<li>페이지 내 목차를 만드는 용도</li>
 			</ul>
 		</section>
 		<section id = "s3">
-			<h1>section</h1>
+			<h2>section</h2>
 			문서의 장, 혹은 절을 구성
 			일반 문서에 여러 장이 있듯이 웹 페이지에 여러 섹션이 가능
 			제목태그를 사용하여 절 혹은 섹션의 주제를 기입
 		</section>
 		<section id = "s4">
-			<h1>article</h1>
+			<h2>article</h2>
 			본문과 연관있지만, 독립적인 콘텐츠를 담는 영역
 			혹은 보조 기사, 블로그 포스트, 댓글 등 기타 독립적인 내용
 			article에 담는 내용이 많은 경우 여러 섹션을 들 수 있다
 		</section>
 		<section id = "s5">
-			<h1>aside</h1>
+			<h2>aside</h2>
 			본문에서 약간 벗어난 노트나 팁
 			신문, 잡지에서 주요 기사 옆 관련기사, 삽입 어구로 표시된 논평등
 			페이지의 오른쪽이나 왼쪽에 주로 배치
 		</section>
 		<section id = "s6">
-			<h1>footer</h1>
+			<h2>footer</h2>
 			꼬리말 영역, 주로 저자나 저작권 정보
 		</section>
 		<footer>

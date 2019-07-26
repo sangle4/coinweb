@@ -7,11 +7,28 @@ section {
 }
 
 h1 {
+	color : black;
+	padding : 1px;
+	float : left;
+}
+
+h2 {
 	background-color : gray;
 	color : white;
 	padding : 1px;
 }
-header, footer, nav {
+
+header {
+	background-color : white;
+	padding : 10px, 0px;
+	border : 10px;
+	margin : 5px;
+	width : 100%;
+	color : white;
+	float : left;
+}
+
+footer {
 	background-color : #4374D9;
 	padding : 10px, 0px;
 	border : 10px;
@@ -21,7 +38,14 @@ header, footer, nav {
 	color : white;
 }
 nav {
-	background-color : black;
+	padding : 10px, 0px;
+	border : 10px;
+	margin : 5px;
+	width : 100%;
+	text-align : center;
+	color : white;
+	
+	background-color : gray;
 	color : white
 }
 ul {
@@ -34,7 +58,7 @@ ol {
 	color : green;
 }
 a:link {
-	color : blue;
+	color : white;
 	text-decoration : none;
 	display : inline-block;
 }
@@ -44,7 +68,7 @@ a:visited {
 	display : inline-block;
 }
 a:hover {
-	background-color : white;
+	background-color : gray;
 	color : black;
 	display : inline-block;
 }
