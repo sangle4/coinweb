@@ -1,0 +1,55 @@
+@charset "EUC-KR";
+* {
+	margin : 10px;
+}
+section {
+	border : solid 2px lightblue;
+}
+
+h1 {
+	background-color : gray;
+	color : white;
+	padding : 1px;
+}
+header, footer, nav {
+	background-color : #4374D9;
+	padding : 10px, 0px;
+	border : 10px;
+	margin : 5px;
+	width : 100%;
+	text-align : center;
+	color : white;
+}
+nav {
+	background-color : black;
+	color : white
+}
+ul {
+	list-style-type : circle;
+}
+ol {
+	list-style-type: upper-roman;
+}
+#hyperLink {
+	color : green;
+}
+a:link {
+	color : blue;
+	text-decoration : none;
+	display : inline-block;
+}
+a:visited {
+	background-color : green;
+	color : white;
+	display : inline-block;
+}
+a:hover {
+	background-color : white;
+	color : black;
+	display : inline-block;
+}
+a:active {
+	background-color : red;
+	color : white;
+	display : inline-block;
+}
