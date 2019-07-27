@@ -2,14 +2,30 @@
 * {
 	margin : 10px;
 }
-section {
-	border : solid 2px lightblue;
+
+#trade {
+	border : solid 2px gray;
 }
 
-h1 {
+#box1 {
+	border : solid 2px gray;
+}
+
+#ad {
+	background-color : white;
+	color : gray;
+	text-decoration : none;
+}
+
+#mainTitle {
 	color : black;
 	padding : 1px;
 	float : left;
+}
+
+#h1 {
+	color : black;
+	padding : 1px;
 }
 
 h2 {
@@ -25,7 +41,16 @@ header {
 	margin : 5px;
 	width : 100%;
 	color : white;
-	float : left;
+}
+
+nav {
+	padding : 10px, 0px;
+	border : 10px;
+	margin : 20px;
+	width : 97%;
+	text-align : center;
+	color : white;
+	background-color : gray;
 }
 
 footer {
@@ -37,17 +62,7 @@ footer {
 	text-align : center;
 	color : white;
 }
-nav {
-	padding : 10px, 0px;
-	border : 10px;
-	margin : 5px;
-	width : 100%;
-	text-align : center;
-	color : white;
-	
-	background-color : gray;
-	color : white
-}
+
 ul {
 	list-style-type : circle;
 }
@@ -57,22 +72,22 @@ ol {
 #hyperLink {
 	color : green;
 }
-a:link {
+#na:link {
 	color : white;
 	text-decoration : none;
 	display : inline-block;
 }
-a:visited {
+#na:visited {
 	background-color : green;
 	color : white;
 	display : inline-block;
 }
-a:hover {
+#na:hover {
 	background-color : gray;
 	color : black;
 	display : inline-block;
 }
-a:active {
+#na:active {
 	background-color : red;
 	color : white;
 	display : inline-block;
