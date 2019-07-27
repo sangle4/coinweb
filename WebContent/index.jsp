@@ -8,11 +8,42 @@
 		<link rel="stylesheet" type="text/css" href="css/css01.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		
+		<script>
+			//alert("hello, iri!"); //페이지의 로딩이 되기 전에 먼저 실행하는 스크립트 문장
+			
+			$(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
+				//alert("hello, iri!");
+				 //https://api.bithumb.com/public/ticker/{currency}
+				//var data = HttpUtil.HttpClientGet("https://api.bithumb.com/public/ticker/{currency}");
+				
+				//alert(data);
+				$("#start_ajax").click(function(){
+				    $.ajax({
+				        type:"GET",
+				        url:"https://api.bithumb.com/public/ticker/{currency}",
+				        data : "ALL",
+				        dataType : "xml",
+				        success: function(xml){
+				            console.log(xml);
+				            alert("success");
+				        },
+				        error: function(xhr, status, error) {
+				            alert(error);
+				        }  
+				    });
+				});
+				
+			});
+			
+			
+			
+		</script>
 	</head>
 	<body>
 		<header>
+				 
 				<img width = "200" height = "45" float = left src="http://blogfiles.naver.net/MjAxODAyMjhfMTc4/MDAxNTE5NzQ0MDA0MjU2.UkoBQg_qlKF7JI1QTga9Ayt_9Dose1j2cI6nbh2Q1kYg.DHAS_0aVUt_GE2OTt2stp7rE31cofj4Xwe0YTSfuVrMg.JPEG.wapper12001/bitcoin-1-300x225.jpg">
+				
 				<h1 id = "mainTitle"><a href = "http://localhost:8080/testweb/" id = "ad">코인웹</a></h1>
 		</header>
 		
@@ -28,6 +59,7 @@
 		<section class="c1" id = "trade">
 			<h1>시세표</h1>
 			<div>
+				<button id="start_ajax">불러오기</button>
 				cdc
 			</div>
 		</section>
