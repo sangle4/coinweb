@@ -28,6 +28,13 @@
 	padding : 1px;
 }
 
+#priceTable {
+	color : gray;
+	font-size : 25px;
+	margin : 2px;
+	padding : 0px 10px;
+}
+
 h2 {
 	background-color : gray;
 	color : white;
@@ -46,8 +53,9 @@ header {
 nav {
 	padding : 10px, 0px;
 	border : 10px;
-	margin : 20px;
+	margin : 10px;
 	width : 97%;
+	height : 40px;
 	text-align : center;
 	color : white;
 	background-color : gray;

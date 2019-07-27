@@ -15,8 +15,35 @@
 				//alert("hello, iri!");
 				 //https://api.bithumb.com/public/ticker/{currency}
 				//var data = HttpUtil.HttpClientGet("https://api.bithumb.com/public/ticker/{currency}");
+				//console.log("Hello, world!");
+				function numberWithCommas(x) {
+                	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            	}
 				
-				//alert(data);
+				$("#start_ajax").click(function(){
+					$.get('https://api.bithumb.com/public/ticker/ALL', function(data) {
+	                    var bithumb_btc = parseFloat(data['data']['BTC']['closing_price']); 
+	                    var bithumb_eth = parseFloat(data['data']['ETH']['closing_price']); 
+	                    var bithumb_xrp = parseFloat(data['data']['XRP']['closing_price']); 
+	                    var bithumb_ltc = parseFloat(data['data']['LTC']['closing_price']); 
+	                    var bithumb_btc2 = 0;
+	                    var bithumb_btc1 = 0;
+	                    var bithumb_btc0 = 0;
+	                    
+	                    bithumb_btc2 = bithumb_btc1;
+	                    bithumb_btc1 = bithumb_btc0;
+	                    bithumb_btc0 = numberWithCommas(bithumb_btc);
+	                    
+	                    alert(bithumb_btc0);
+	                    //$('#bithumb_BTC').html(bithumb_btc0 + ' (N)<BR>'+bithumb_btc1+'<br>'+bithumb_btc2);  // 거래소 시세 정보 표에 값 세팅 
+	                    //$('#bithumb_ETH').html(bithumb_eth0 + ' (N)<BR>'+bithumb_eth1+'<br>'+bithumb_eth2); 
+	                    //$('#bithumb_XRP').html(bithumb_xrp0 + ' (N)<BR>'+bithumb_xrp1+'<br>'+bithumb_xrp2);                 
+	                    //$('#bithumb_LTC').html(bithumb_ltc0 + ' (N)<BR>'+bithumb_ltc1+'<br>'+bithumb_ltc2);                 
+	                });
+				});
+				/*
+				alert("no data");
+				$.get('', funtion(data))
 				$("#start_ajax").click(function(){
 				    $.ajax({
 				        type:"GET",
@@ -32,6 +59,7 @@
 				        }  
 				    });
 				});
+				*/
 				
 			});
 			
@@ -47,7 +75,6 @@
 				<h1 id = "mainTitle"><a href = "http://localhost:8080/testweb/" id = "ad">코인웹</a></h1>
 		</header>
 		
-		<!-- <i class="material-icons">cloud</i> -->
 		<nav>
 			<a href="#s1" id = "na"><i class="material-icons">cloud</i></a>&nbsp;&nbsp;
 			<a href="#s2" id = "na">[nav]</a>&nbsp;&nbsp;
@@ -56,13 +83,47 @@
 			<a href="#s5" id = "na">[aside]</a>&nbsp;&nbsp;
 			<a href="#s6" id = "na">[footer]</a>&nbsp;&nbsp;
 		</nav>
-		<section class="c1" id = "trade">
-			<h1>시세표</h1>
+		<!-- <section class="c1" id = "trade"> -->
+			
 			<div>
-				<button id="start_ajax">불러오기</button>
-				cdc
+				<h1 id = "priceTable">시세표</h1>
+				<button id="start_ajax">새로고침</button>
+				
+				<table border="1" width = 98%;>
+    				<thead>
+        				<tr>
+            				<th>번호</th>
+            				<th>음료</th>
+            				<th>가격</th>
+        				</tr>
+    				</thead>
+    				<tbody>
+        				<tr>
+            				<th>1</th>
+            				<td>콜라</td>
+            				<td>2000원</td>
+        				</tr>
+        				<tr>
+            				<th>2</th>
+            				<td>사이다</td>
+            				<td>2000원</td>
+        				</tr>
+        				<tr>
+            				<th>3</th>
+            				<td>환타</td>
+            				<td>2000원</td>
+        				</tr>  
+				    </tbody>			
+    				<tfoot>
+      					<tr>
+          					<th>...</th>
+          					<td>...</td>
+          					<td>...</td>
+      					</tr>  
+    				</tfoot>
+  				</table>
 			</div>
-		</section>
+		<!--  </section> -->
 		<section class="c1" id = "box1">
 			<h2>header</h2>
 			<ol>
