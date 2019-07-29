@@ -28,12 +28,16 @@
 	padding : 1px;
 }
 
-#priceTable {
+#priceh1 {
 	color : gray;
 	font-size : 25px;
 	margin : 2px;
 	padding : 0px 10px;
 	float : left;
+}
+
+#tradeTable {
+	text-align : center;
 }
 
 h2 {

@@ -12,29 +12,26 @@
 			//alert("hello, iri!"); //페이지의 로딩이 되기 전에 먼저 실행하는 스크립트 문장
 			
 			$(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
-				//alert("hello, iri!");
-				 //https://api.bithumb.com/public/ticker/{currency}
-				//var data = HttpUtil.HttpClientGet("https://api.bithumb.com/public/ticker/{currency}");
-				//console.log("Hello, world!");
+				
 				function numberWithCommas(x) {
                 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             	}
 				
 				$("#start_ajax").click(function(){
 					$.get('https://api.bithumb.com/public/ticker/ALL', function(data) {
-	                    var bithumb_btc = parseFloat(data['data']['BTC']['closing_price']); 
-	                    var bithumb_eth = parseFloat(data['data']['ETH']['closing_price']); 
-	                    var bithumb_xrp = parseFloat(data['data']['XRP']['closing_price']); 
-	                    var bithumb_ltc = parseFloat(data['data']['LTC']['closing_price']); 
-	                    var bithumb_btc2 = 0;
-	                    var bithumb_btc1 = 0;
-	                    var bithumb_btc0 = 0;
+	                    var bithumb_btc = parseFloat(data['data']['BTC']['closing_price']);
+	                    var bithumb_btc_fluctate = parseFloat(data['data']['BTC']['24H_fluctate']);
+	                    var bithumb_btc_trade = parseFloat(data['data']['BTC']['volume_1day']);
 	                    
-	                    bithumb_btc2 = bithumb_btc1;
-	                    bithumb_btc1 = bithumb_btc0;
-	                    bithumb_btc0 = numberWithCommas(bithumb_btc);
+	                    var rate = 1183; //달러 환율, 변경해야됨
 	                    
-	                    alert(bithumb_btc0);
+	                 	// 거래소 시세 정보 표에 값 세팅
+	                    $('#bithumb_KRW').html(numberWithCommas(bithumb_btc) + " KRW");
+	                    $('#bithumb_USD').html(numberWithCommas(bithumb_btc) + " USD");
+	                    $('#bithumb_fluctate').html(bithumb_btc_fluctate + " KRW");
+	                    $('#bithumb_trade').html(bithumb_btc_trade.toFixed(1) + " BTC");
+	                    
+	                    
 	                    //$('#bithumb_BTC').html(bithumb_btc0 + ' (N)<BR>'+bithumb_btc1+'<br>'+bithumb_btc2);  // 거래소 시세 정보 표에 값 세팅 
 	                    //$('#bithumb_ETH').html(bithumb_eth0 + ' (N)<BR>'+bithumb_eth1+'<br>'+bithumb_eth2); 
 	                    //$('#bithumb_XRP').html(bithumb_xrp0 + ' (N)<BR>'+bithumb_xrp1+'<br>'+bithumb_xrp2);                 
@@ -86,32 +83,54 @@
 		<!-- <section class="c1" id = "trade"> -->
 			
 			<div>
-				<h1 id = "priceTable">시세표</h1>
+				<h1 id = "priceh1">시세표</h1>
 				<button id="start_ajax">새로고침</button>
 				
-				<table border="1" width = 98%;>
+				<table border="1" width = 98%; id = "tradeTable">
     				<thead>
         				<tr>
-            				<th>번호</th>
-            				<th>음료</th>
-            				<th>가격</th>
+            				<th>거래소</th>
+            				<th>실시간 시세(KRW)</th>
+            				<th>실시간 시세(USD)</th>
+            				<th>24시간 변동률</th>
+            				<th>거래량</th>
         				</tr>
     				</thead>
     				<tbody>
         				<tr>
-            				<th>1</th>
-            				<td>콜라</td>
-            				<td>2000원</td>
+            				<th>빗썸</th>
+            				<td id = "bithumb_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
+            				<td id = "bithumb_USD"></td> <!-- 빗썸 실시간 시세(달러) -->
+            				<td id = "bithumb_fluctate"></td> <!-- 빗썸 24시간 변동률 -->
+            				<td id = "bithumb_trade"></td> <!-- 빗썸 거래량 -->
         				</tr>
         				<tr>
-            				<th>2</th>
-            				<td>사이다</td>
-            				<td>2000원</td>
+            				<th>업비트</th>
+            				<td></td> <!-- 업비트 실시간 시세(원화) -->
+            				<td></td> <!-- 업비트 실시간 시세(달러) -->
+            				<td></td> <!-- 업비트 24시간 변동률 -->
+            				<td></td> <!-- 업비트 거래량 -->
         				</tr>
         				<tr>
-            				<th>3</th>
-            				<td>환타</td>
-            				<td>2000원</td>
+            				<th>코인원</th>
+            				<td></td> <!-- 코인원 실시간 시세(원화) -->
+            				<td></td> <!-- 코인원 실시간 시세(달러) -->
+            				<td></td> <!-- 코인원 24시간 변동률 -->
+            				<td></td> <!-- 코인원 거래량 -->
+        				</tr>
+        				<tr>
+            				<th>추가</th>
+            				<td></td> <!--  실시간 시세(원화) -->
+            				<td></td> <!--  실시간 시세(달러) -->
+            				<td></td> <!--  24시간 변동률 -->
+            				<td></td> <!--  거래량 -->
+        				</tr>
+        				<tr>
+            				<th>추가2</th>
+            				<td></td> <!--  실시간 시세(원화) -->
+            				<td></td> <!--  실시간 시세(달러) -->
+            				<td></td> <!--  24시간 변동률 -->
+            				<td></td> <!--  거래량 -->
         				</tr>  
 				    </tbody>			
     				<tfoot>
@@ -119,12 +138,14 @@
           					<th>...</th>
           					<td>...</td>
           					<td>...</td>
+          					<td>...</td>
+          					<td>...</td>
       					</tr>  
     				</tfoot>
   				</table>
 			</div>
 		<!--  </section> -->
-		<section class="c1" id = "box1">
+		<section class="c1" id = "s1">
 			<h2>header</h2>
 			<ol>
 			<li>페이지의 머가리</li>
@@ -134,7 +155,7 @@
 			<a href="http://eclass.dongguk.edu">동국대학교 eclass 사이트</a>
 			</div>
 		</section>
-		<section id = "box1">
+		<section id = "s2">
 			<h2>nav</h2>
 			<ul>
 			<li>하이퍼링크들을 모아 놓은 특별한 섹션</li>
