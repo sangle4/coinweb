@@ -8,7 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="css/css01.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src = "js/tradeTable.js"></script> <!-- 메인페이지 테이블출력 js -->
+		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 빗썸 API js파일  -->
+		<script src = "js/AccessAPI/bithumbAPI.js"></script> <!-- 바이낸스 API js파일  -->
+		<script src = "js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
+		<script src = "js/AccessAPI/coinmarketcapAPI.js"></script> <!-- 코인원 API js파일  -->
+		<script src = "js/AccessAPI/coinoneAPI.js"></script> <!-- 마켓캡 API js파일  -->
+		<script src = "js/AccessAPI/korbitAPI.js"></script> <!-- 코빗 API js파일  -->
+		<script src = "js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 		<script>
 						
 		</script>
@@ -58,13 +64,14 @@
             				<td id = "coinone_fluctate"></td> <!-- 코인원 24시간 변동률 -->
             				<td id = "coinone_trade"></td> <!-- 코인원 거래량 -->
         				</tr>
+        				<!--
         				<tr>
-            				<th>업비트</th>
-            				<td></td> <!-- 업비트 실시간 시세(원화) -->
-            				<td></td> <!-- 업비트 실시간 시세(달러) -->
-            				<td></td> <!-- 업비트 24시간 변동률 -->
-            				<td></td> <!-- 업비트 거래량 -->
-        				</tr>
+            				<th>코빗</th>
+            				<td id = "korbit_KRW"></td> 
+            				<td id = "korbit_USD"></td> 
+            				<td id = "korbit_fluctate"></td>
+            				<td id = "korbit_trade"></td>
+        				</tr> -->
         				<tr>
             				<th>추가</th>
             				<td></td> <!--  실시간 시세(원화) -->
@@ -82,25 +89,25 @@
 				    </tbody>			
     				<tfoot>
       					<tr>
-          					<th>...</th>
-          					<td>...</td>
-          					<td>...</td>
-          					<td>...</td>
-          					<td>...</td>
+          					<th>종합</th>
+          					<td id = "marketcap_KRW"></td> 
+            				<td id = "marketcap_USD"></td> 
+            				<td id = "marketcap_fluctate"></td>
+            				<td id = "marketcap_trade"></td>
       					</tr>  
     				</tfoot>
   				</table>
+  				<div>
+  					<!-- 종합 표시란 -->
+  				</div>
 			</div>
 		<!--  </section> -->
 		<section class="c1" id = "s1">
-			<h2>header</h2>
+			<h2>시가총액</h2>
 			<ol>
 			<li>페이지의 머가리</li>
 			<li>페이지 제목, 페이지를 소개하는 간단한 섹션</li>
 			</ol>
-			<div id = "hyperLink">
-			<a href="http://eclass.dongguk.edu">동국대학교 eclass 사이트</a>
-			</div>
 		</section>
 		<section id = "s2">
 			<h2>nav</h2>
@@ -108,18 +115,6 @@
 			<li>하이퍼링크들을 모아 놓은 특별한 섹션</li>
 			<li>페이지 내 목차를 만드는 용도</li>
 			</ul>
-		</section>
-		<section id = "box1">
-			<h2>section</h2>
-			문서의 장, 혹은 절을 구성
-			일반 문서에 여러 장이 있듯이 웹 페이지에 여러 섹션이 가능
-			제목태그를 사용하여 절 혹은 섹션의 주제를 기입
-		</section>
-		<section id = "box1">
-			<h2>article</h2>
-			본문과 연관있지만, 독립적인 콘텐츠를 담는 영역
-			혹은 보조 기사, 블로그 포스트, 댓글 등 기타 독립적인 내용
-			article에 담는 내용이 많은 경우 여러 섹션을 들 수 있다
 		</section>
 		<section id = "box1">
 			<h2>aside</h2>
@@ -130,6 +125,9 @@
 		<section id = "box1">
 			<h2>footer</h2>
 			꼬리말 영역, 주로 저자나 저작권 정보
+			<div id = "hyperLink">
+			<a href="http://eclass.dongguk.edu">동국대학교 eclass 사이트</a>
+			</div>
 		</section>
 		<footer>
 			<p>A Competitive Study on 3G Blockchain EOS and Cardano(ADA)<br />
