@@ -89,7 +89,7 @@
 				    </tbody>			
     				<tfoot>
       					<tr>
-          					<th>세계시세</th>
+          					<th>세계 종합</th>
           					<td id = "marketcap_KRW"></td> 
             				<td id = "marketcap_USD"></td> 
             				<td id = "marketcap_fluctate"></td>
