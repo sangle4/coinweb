@@ -58,9 +58,10 @@ header {
 nav {
 	padding : 0px, 0px;
 	border : 2px;
-	margin : 2px;
-	width : 100%;
+	margin : 10px;
+	width : 98%;
 	height : 40px;
+	padding : 1px;
 	text-align : center;
 	color : white;
 	background-color : gray;

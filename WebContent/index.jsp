@@ -89,7 +89,7 @@
 				    </tbody>			
     				<tfoot>
       					<tr>
-          					<th>종합</th>
+          					<th>세계시세</th>
           					<td id = "marketcap_KRW"></td> 
             				<td id = "marketcap_USD"></td> 
             				<td id = "marketcap_fluctate"></td>
@@ -97,8 +97,9 @@
       					</tr>  
     				</tfoot>
   				</table>
-  				<div>
+  				<div id = "marketcap" style="padding:0px 10px; text-align:right;">
   					<!-- 종합 표시란 -->
+  					loading...
   				</div>
 			</div>
 		<!--  </section> -->
