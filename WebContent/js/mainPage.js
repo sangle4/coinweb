@@ -37,7 +37,7 @@ function fillTable() {
 	getDataFromBithumb();
 	getDataFromCoinone();
 	getDataFromCoinmarketcap();
-	getDataFromBinance();
+	//getDataFromBinance();
 	//getDataFromKorbit(); //CORS문제로 chrome에서 사용불가
 }
 
