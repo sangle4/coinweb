@@ -39,7 +39,7 @@
 				<h1 id = "priceh1">시세표</h1>
 				<button id="start_ajax">새로고침</button>
 				
-				<table border="1" width = 98%; id = "tradeTable">
+				<table border="1" width = 98%; id = "tradeTable" onLoad="refreshTable()">
     				<thead>
         				<tr>
             				<th>거래소</th>

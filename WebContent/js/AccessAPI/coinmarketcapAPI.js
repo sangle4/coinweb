@@ -1,4 +1,4 @@
-function totalCap() {
+function writeTotalCap(){
 	$.ajax({
 		url:'https://api.coinmarketcap.com/v1/ticker/?start=5&limit=100',
 		type:'GET',
@@ -9,12 +9,12 @@ function totalCap() {
 			//alert(json[1]['symbol']);
 		},
 		error: function(){
-			alert("error!");
+			alert("Total cap refreshing error!");
 		}
 	});
 }
 
-function getDataFromCoinmarketcap(){
+function writeTableMarketCap(){
 	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=100', function(data) {
 		//console.log(data);
 		
@@ -41,5 +41,4 @@ function getDataFromCoinmarketcap(){
 		//console.log(totalcap);
 		//console.log(btccap);
     });
-	
 }

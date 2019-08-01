@@ -1,3 +1,4 @@
+/*
 $.get('https://api.binance.com/api/v1/ticker/24hr', function(data) {
 	console.log(data);
 	

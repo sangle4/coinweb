@@ -33,17 +33,16 @@ function getUSDrate(){
 	*/
 }
 
-function fillTable() {
-	getDataFromBithumb();
-	getDataFromCoinone();
-	getDataFromCoinmarketcap();
-	//getDataFromBinance();
-	//getDataFromKorbit(); //CORS문제로 chrome에서 사용불가
+function fillTable(){
+	writeTableBithumb();
+	writeTableCoinone();
+	writeTableMarketCap();
+	writeTotalCap();
 }
 
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
+	setInterval("fillTable()", 10000); //5초후 재시작
 	fillTable();
-	totalCap();
 	getUSDrate();
 	
 	$("#start_ajax").click(function(){ //새로고침 버튼시 실행되는 함수
