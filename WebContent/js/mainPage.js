@@ -2,6 +2,10 @@ function numberWithCommas(x) { //KRW 단위 나눔 표시 함수
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+function numberDeleteChar(x) { //문자열 제거 함수
+    return x.toString().replace(/[^0-9]+/g, '');
+}
+
 function USDtoKRW(convert){
 	var rate = 1184;
 	
@@ -37,6 +41,8 @@ function fillTable(){
 	writeTableBithumb();
 	writeTableCoinone();
 	writeTableMarketCap();
+	writeTablePoloniex();
+	
 	writeTotalCap();
 }
 

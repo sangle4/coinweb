@@ -11,9 +11,10 @@
 		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 바이낸스 API js파일  -->
 		<script src = "js/AccessAPI/bithumbAPI.js"></script> <!-- 빗썸 API js파일  -->
 		<script src = "js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
-		<script src = "js/AccessAPI/coinmarketcapAPI.js"></script> <!-- 코인원 API js파일  -->
-		<script src = "js/AccessAPI/coinoneAPI.js"></script> <!-- 마켓캡 API js파일  -->
+		<script src = "js/AccessAPI/coinmarketcapAPI.js"></script> <!-- 마켓캡 API js파일  -->
+		<script src = "js/AccessAPI/coinoneAPI.js"></script> <!-- 코인원 API js파일  -->
 		<script src = "js/AccessAPI/korbitAPI.js"></script> <!-- 코빗 API js파일  -->
+		<script src = "js/AccessAPI/poloniexAPI.js"></script> <!-- 폴로닉스 API js파일  -->
 		<script src = "js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 		<script>
 						
@@ -64,14 +65,13 @@
             				<td id = "coinone_fluctate"></td> <!-- 코인원 24시간 변동률 -->
             				<td id = "coinone_trade"></td> <!-- 코인원 거래량 -->
         				</tr>
-        				<!--
         				<tr>
-            				<th>코빗</th>
-            				<td id = "korbit_KRW"></td> 
-            				<td id = "korbit_USD"></td> 
-            				<td id = "korbit_fluctate"></td>
-            				<td id = "korbit_trade"></td>
-        				</tr> -->
+            				<th>폴로닉스</th>
+            				<td id = "poloniex_KRW"></td> 
+            				<td id = "poloniex_USD"></td> 
+            				<td id = "poloniex_fluctate"></td>
+            				<td id = "poloniex_trade"></td>
+        				</tr>
         				<tr>
             				<th>추가</th>
             				<td></td> <!--  실시간 시세(원화) -->

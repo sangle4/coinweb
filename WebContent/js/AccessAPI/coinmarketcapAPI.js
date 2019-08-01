@@ -28,17 +28,19 @@ function writeTableMarketCap(){
 		
         $('#marketcap_KRW').html(USDtoKRW(marketcap_btc) + " KRW");
         $('#marketcap_USD').html(numberWithCommas(marketcap_btc.toFixed(0)) + " USD");
-        $('#marketcap_fluctate').html(marketcap_btc_fluctate + " KRW");
+        //$('#marketcap_fluctate').html(marketcap_btc_fluctate + " KRW");
         $('#marketcap_trade').html(marketcap_btc_trade.toFixed(1) + " BTC");
         
-        
-		var totalcap = 0;
-		var btccap = parseFloat(data[0]['market_cap_usd']);
-		
-		for(var i = 0; i<100; i++){
-			totalcap += parseFloat(data[i]['market_cap_usd']);
-		}
-		//console.log(totalcap);
-		//console.log(btccap);
+        var temp = "";
+        if(marketcap_btc_fluctate > 0){
+	    	document.getElementById('marketcap_fluctate').style.color = "red";
+	    	temp += "▲  " + numberWithCommas(marketcap_btc_fluctate) + " KRW";
+	    	$('#marketcap_fluctate').html(temp);
+	    }
+	    else{
+	    	document.getElementById('marketcap_fluctate').style.color = "blue";
+	    	temp += "▼  " + numberWithCommas(marketcap_btc_fluctate) + " KRW";
+	    	$('#marketcap_fluctate').html(temp);
+	    }
     });
 }
