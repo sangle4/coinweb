@@ -8,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/css01.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 빗썸 API js파일  -->
-		<script src = "js/AccessAPI/bithumbAPI.js"></script> <!-- 바이낸스 API js파일  -->
+		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 바이낸스 API js파일  -->
+		<script src = "js/AccessAPI/bithumbAPI.js"></script> <!-- 빗썸 API js파일  -->
 		<script src = "js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
 		<script src = "js/AccessAPI/coinmarketcapAPI.js"></script> <!-- 코인원 API js파일  -->
 		<script src = "js/AccessAPI/coinoneAPI.js"></script> <!-- 마켓캡 API js파일  -->

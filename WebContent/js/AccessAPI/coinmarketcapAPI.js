@@ -16,7 +16,7 @@ function totalCap() {
 
 function getDataFromCoinmarketcap(){
 	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=100', function(data) {
-		console.log(data);
+		//console.log(data);
 		
 		var marketcap_btc = parseFloat(data[0]['price_usd']);
 		var marketcap_btc_fluctate = parseFloat(data[0]['percent_change_24h']);
