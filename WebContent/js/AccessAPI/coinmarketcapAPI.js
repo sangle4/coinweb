@@ -37,13 +37,13 @@ function writeTableMarketCap(){
         if(marketcap_btc_fluctate > 0){
 	    	document.getElementById('marketcap_fluctate').style.color = "red";
 	    	temp += "▲  " + changeSize + "KRW　";
-	    	temp += marketcap_btc_fluctate + "%";
+	    	temp += " +" + marketcap_btc_fluctate + "%";
 	    	$('#marketcap_fluctate').html(temp);
 	    }
 	    else{
 	    	document.getElementById('marketcap_fluctate').style.color = "blue";
 	    	temp += "▼  " + changeSize + "KRW　";
-	    	temp += marketcap_btc_fluctate + "%";
+	    	temp += " -" + marketcap_btc_fluctate + "%";
 	    	$('#marketcap_fluctate').html(temp);
 	    }
     });

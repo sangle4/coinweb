@@ -48,7 +48,7 @@ function fillTable(){
 }
 
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
-	setInterval("fillTable()", 10000); //5초후 재시작
+	setInterval("fillTable()", 10000); //10초후 재시작
 	fillTable();
 	getUSDrate();
 	

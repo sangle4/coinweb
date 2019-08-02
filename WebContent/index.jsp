@@ -80,13 +80,15 @@
             				<td id = "poloniex_fluctate"></td>
             				<td id = "poloniex_trade"></td>
         				</tr>
+        				<!-- 
         				<tr>
             				<th>추가</th>
-            				<td></td> <!--  실시간 시세(원화) -->
-            				<td></td> <!--  실시간 시세(달러) -->
-            				<td></td> <!--  24시간 변동률 -->
-            				<td></td> <!--  거래량 -->
-        				</tr>  
+            				<td></td> 
+            				<td></td> 
+            				<td></td> 
+            				<td></td> 
+        				</tr>
+        				 -->  
 				    </tbody>			
     				<tfoot>
       					<tr>
