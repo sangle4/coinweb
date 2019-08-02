@@ -42,6 +42,7 @@ function fillTable(){
 	writeTableCoinone();
 	writeTableMarketCap();
 	writeTablePoloniex();
+	writeTableUpbit();
 	
 	writeTotalCap();
 }

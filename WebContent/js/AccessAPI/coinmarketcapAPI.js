@@ -24,6 +24,8 @@ function writeTableMarketCap(){
 
 		var rate = 1183; //달러 환율, 변경해야됨
 		
+		var changeSize = numberWithCommas((marketcap_btc/100*rate*marketcap_btc_fluctate).toFixed(0));
+		
 		// 거래소 시세 정보 표에 값 세팅
 		
         $('#marketcap_KRW').html(USDtoKRW(marketcap_btc) + " KRW");
@@ -34,12 +36,14 @@ function writeTableMarketCap(){
         var temp = "";
         if(marketcap_btc_fluctate > 0){
 	    	document.getElementById('marketcap_fluctate').style.color = "red";
-	    	temp += "▲  " + numberWithCommas(marketcap_btc_fluctate) + " KRW";
+	    	temp += "▲  " + changeSize + "KRW　";
+	    	temp += marketcap_btc_fluctate + "%";
 	    	$('#marketcap_fluctate').html(temp);
 	    }
 	    else{
 	    	document.getElementById('marketcap_fluctate').style.color = "blue";
-	    	temp += "▼  " + numberWithCommas(marketcap_btc_fluctate) + " KRW";
+	    	temp += "▼  " + changeSize + "KRW　";
+	    	temp += marketcap_btc_fluctate + "%";
 	    	$('#marketcap_fluctate').html(temp);
 	    }
     });

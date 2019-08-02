@@ -15,6 +15,7 @@
 		<script src = "js/AccessAPI/coinoneAPI.js"></script> <!-- 코인원 API js파일  -->
 		<script src = "js/AccessAPI/korbitAPI.js"></script> <!-- 코빗 API js파일  -->
 		<script src = "js/AccessAPI/poloniexAPI.js"></script> <!-- 폴로닉스 API js파일  -->
+		<script src = "js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
 		<script src = "js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 		<script>
 						
@@ -51,6 +52,13 @@
         				</tr>
     				</thead>
     				<tbody>
+    					<tr>
+            				<th>업비트</th>
+            				<td id = "upbit_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
+            				<td id = "upbit_USD"></td> <!-- 빗썸 실시간 시세(달러) -->
+            				<td id = "upbit_fluctate"></td> <!-- 빗썸 24시간 변동률 -->
+            				<td id = "upbit_trade"></td> <!-- 빗썸 거래량 -->
+        				</tr>
         				<tr>
             				<th>빗썸</th>
             				<td id = "bithumb_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
@@ -74,13 +82,6 @@
         				</tr>
         				<tr>
             				<th>추가</th>
-            				<td></td> <!--  실시간 시세(원화) -->
-            				<td></td> <!--  실시간 시세(달러) -->
-            				<td></td> <!--  24시간 변동률 -->
-            				<td></td> <!--  거래량 -->
-        				</tr>
-        				<tr>
-            				<th>추가2</th>
             				<td></td> <!--  실시간 시세(원화) -->
             				<td></td> <!--  실시간 시세(달러) -->
             				<td></td> <!--  24시간 변동률 -->
