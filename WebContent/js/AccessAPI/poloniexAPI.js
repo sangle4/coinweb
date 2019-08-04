@@ -23,14 +23,14 @@ function writeTablePoloniex(){
 	    if(poloniex_btc_fluctate > 0){
 	    	document.getElementById('poloniex_fluctate').style.color = "red";
 	    	temp += "▲  " + changeSize + "KRW　";
-	    	temp += " +" + poloniex_btc_fluctate + "%";
+	    	temp += " " + poloniex_btc_fluctate + "%";
 	    	
 	    	$('#poloniex_fluctate').html(temp);
 	    }
 	    else{
 	    	document.getElementById('poloniex_fluctate').style.color = "blue";
 	    	temp += "▼  " + changeSize + "KRW　";
-	    	temp += " -" + poloniex_btc_fluctate + "%";
+	    	temp += " " + poloniex_btc_fluctate + "%";
 	    	
 	    	$('#poloniex_fluctate').html(temp);
 	    }

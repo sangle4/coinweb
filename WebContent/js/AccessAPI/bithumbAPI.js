@@ -16,13 +16,13 @@ function writeTableBithumb(){
 	    if(bithumb_btc_fluctate > 0){
 	    	document.getElementById('bithumb_fluctate').style.color = "red";
 	    	temp += "▲  " + numberWithCommas(bithumb_btc_fluctate) + " KRW";
-	    	temp += "　+" + fluctateRate + "%"
+	    	temp += "　" + fluctateRate + "%"
 	    	$('#bithumb_fluctate').html(temp);
 	    }
 	    else{
 	    	document.getElementById('bithumb_fluctate').style.color = "blue";
 	    	temp += "▼  " + numberWithCommas(bithumb_btc_fluctate) + " KRW";
-	    	temp += "　-" + fluctateRate + "%"
+	    	temp += "　" + fluctateRate + "%"
 	    	$('#bithumb_fluctate').html(temp);
 	    }
 	});

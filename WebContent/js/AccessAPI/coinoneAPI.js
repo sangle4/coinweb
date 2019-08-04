@@ -18,13 +18,13 @@ function writeTableCoinone(){
 	    if(coinone_btc_fluctate > 0){
 	    	document.getElementById('coinone_fluctate').style.color = "red";
 	    	temp += "▲  " + numberWithCommas(coinone_btc_fluctate) + " KRW";
-	    	temp += "　+" + fluctateRate + "%"
+	    	temp += "　" + fluctateRate + "%"
 	    	$('#coinone_fluctate').html(temp);
 	    }
 	    else{
 	    	document.getElementById('coinone_fluctate').style.color = "blue";
 	    	temp += "▼  " + numberWithCommas(coinone_btc_fluctate) + " KRW";
-	    	temp += "　-" + fluctateRate + "%"
+	    	temp += "　" + fluctateRate + "%"
 	    	$('#coinone_fluctate').html(temp);
 	    }
 	});

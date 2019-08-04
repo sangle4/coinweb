@@ -1,6 +1,6 @@
 function writeTableUpbit(){
 	$.get('https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.KRW-BTC', function(data) {
-	    console.log(data);
+	    //console.log(data);
 	    
 	    var upbit_btc = parseFloat(data[0]['tradePrice']);
 	    var upbit_btc_fluctate = parseFloat(data[0]['changePrice']);

@@ -33,6 +33,9 @@ connected to binance api with node.js, but it's not working at web
 Aug 2, 2019
 Added upbit api and trade table function fixed
 ///////////////////////////////////////////////////////////////
+Aug 3, 2019
+Wrote README.txt to understand this project
+*net::ERR_NETWORK_IO_SUSPENDED error occured. 
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -43,3 +46,5 @@ Added upbit api and trade table function fixed
 ***NEED TO FIX***
 1. Can't use korbit api because of CORS. Need to find a way to use this.
 2. Can't use binance api because of CORS, fail to fix get rate function
+3. Need to make another branch to manage this project
+4. net::ERR_NETWORK_IO_SUSPENDED error occured. 
