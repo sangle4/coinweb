@@ -17,13 +17,14 @@ function writeTablePoloniex(){
         // 거래소 시세 정보 표에 값 세팅
 	 	$('#poloniex_KRW').html(USDtoKRW(poloniex_btc) + " KRW");
 	 	$('#poloniex_USD').html(numberWithCommas(poloniex_btc.toFixed(0)) + " USD");
-	    $('#poloniex_trade').html(poloniex_btc_trade.toFixed(1) + " BTC");
+	    $('#poloniex_volume').html(poloniex_btc_trade.toFixed(1) + " BTC");
+	    $('#poloniex_premium').html(" - ");
 	    
 	    var temp = "";
 	    if(poloniex_btc_fluctate > 0){
 	    	document.getElementById('poloniex_fluctate').style.color = "red";
 	    	temp += "▲  " + changeSize + "KRW　";
-	    	temp += " " + poloniex_btc_fluctate + "%";
+	    	temp += " +" + poloniex_btc_fluctate + "%";
 	    	
 	    	$('#poloniex_fluctate').html(temp);
 	    }

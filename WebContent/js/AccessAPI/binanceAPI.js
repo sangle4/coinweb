@@ -1,12 +1,25 @@
 /*
-$.get('https://api.binance.com/api/v1/ticker/24hr', function(data) {
-	console.log(data);
+function writeTableBinance(){
+	console.log("binance forum");
 	
-});
-
-function getDataFromBinance(){
-	console.log("This is getDataFromBinance function.");
+	//var ticker24h = "/api/v1/ticker/24hr";
+	var params = {'symbol' : 'BTCUSDT'};
+	
+	
+	$.ajax({
+		url:'https://api.binance.com/api/v1/ticker/24hr',
+		type:'GET',
+		data: params,
+		dataType:'json',
+		success: function(json){
+			console.log(json);
+		},
+		error: function(){
+			alert("Total cap refreshing error!");
+		}
+	});
 }
+*/
 
 /*
 const Binance = require('node-binance-api');
@@ -26,4 +39,10 @@ binance.prices((error, ticker) => { //전체 코인 출력
 	console.log("prices()", ticker);
 	console.log("Price of BTC: ", ticker.BTCUSDT);
 });
+
+
+$.get('api.binance.com/api/v1/ticker/allPrices', function(data) {
+		console.log(data);
+		
+	});
 */

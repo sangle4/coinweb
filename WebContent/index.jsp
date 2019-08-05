@@ -16,6 +16,7 @@
 		<script src = "js/AccessAPI/korbitAPI.js"></script> <!-- 코빗 API js파일  -->
 		<script src = "js/AccessAPI/poloniexAPI.js"></script> <!-- 폴로닉스 API js파일  -->
 		<script src = "js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
+		<script src = "js/tradeCalcul.js"></script> <!-- 거래 계산식모음 스크립트파일 -->
 		<script src = "js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 		<script>
 						
@@ -48,6 +49,7 @@
             				<th>실시간 시세(KRW)</th>
             				<th>실시간 시세(USD)</th>
             				<th>24시간 변동률</th>
+            				<th>한국 프리미엄</th>
             				<th>거래량</th>
         				</tr>
     				</thead>
@@ -57,28 +59,32 @@
             				<td id = "upbit_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
             				<td id = "upbit_USD"></td> <!-- 빗썸 실시간 시세(달러) -->
             				<td id = "upbit_fluctate"></td> <!-- 빗썸 24시간 변동률 -->
-            				<td id = "upbit_trade"></td> <!-- 빗썸 거래량 -->
+            				<td id = "upbit_premium"></td> <!-- 해외 거래소와의 프리미엄 차이 -->
+            				<td id = "upbit_volume"></td> <!-- 빗썸 거래량 -->
         				</tr>
         				<tr>
             				<th>빗썸</th>
-            				<td id = "bithumb_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
-            				<td id = "bithumb_USD"></td> <!-- 빗썸 실시간 시세(달러) -->
-            				<td id = "bithumb_fluctate"></td> <!-- 빗썸 24시간 변동률 -->
-            				<td id = "bithumb_trade"></td> <!-- 빗썸 거래량 -->
+            				<td id = "bithumb_KRW"></td>
+            				<td id = "bithumb_USD"></td>
+            				<td id = "bithumb_fluctate"></td>
+            				<td id = "bithumb_premium"></td>
+            				<td id = "bithumb_volume"></td>
         				</tr>
         				<tr>
             				<th>코인원</th>
-            				<td id = "coinone_KRW"></td> <!-- 코인원 실시간 시세(원화) -->
-            				<td id = "coinone_USD"></td> <!-- 코인원 실시간 시세(달러) -->
-            				<td id = "coinone_fluctate"></td> <!-- 코인원 24시간 변동률 -->
-            				<td id = "coinone_trade"></td> <!-- 코인원 거래량 -->
+            				<td id = "coinone_KRW"></td> 
+            				<td id = "coinone_USD"></td>
+            				<td id = "coinone_fluctate"></td>
+            				<td id = "coinone_premium"></td>
+            				<td id = "coinone_volume"></td>
         				</tr>
         				<tr>
             				<th>폴로닉스</th>
             				<td id = "poloniex_KRW"></td> 
             				<td id = "poloniex_USD"></td> 
             				<td id = "poloniex_fluctate"></td>
-            				<td id = "poloniex_trade"></td>
+            				<td id = "poloniex_premium"></td>
+            				<td id = "poloniex_volume"></td>
         				</tr>
         				<!-- 
         				<tr>
@@ -96,7 +102,8 @@
           					<td id = "marketcap_KRW"></td> 
             				<td id = "marketcap_USD"></td> 
             				<td id = "marketcap_fluctate"></td>
-            				<td id = "marketcap_trade"></td>
+            				<td id = "marketcap_premium"></td>
+            				<td id = "marketcap_volume"></td>
       					</tr>  
     				</tfoot>
   				</table>

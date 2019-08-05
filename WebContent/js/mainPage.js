@@ -43,20 +43,28 @@ function fillTable(){
 	writeTableMarketCap();
 	writeTablePoloniex();
 	writeTableUpbit();
+	//writeTableBinance();
 	
 	writeTotalCap();
 }
 
+$.ajax({
+	   url: "http://localhost:8080/testweb/",
+	   timeout: 12000
+	});
+
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
-	setInterval("fillTable()", 10000); //10초후 재시작
 	fillTable();
+	setInterval("fillTable()", 10000); //10초후 재시작
 	getUSDrate();
+	
 	
 	$("#start_ajax").click(function(){ //새로고침 버튼시 실행되는 함수
 		fillTable();
-		
 	//end start ajax
 	});
+	
+	
 //end document ready
 });
 			

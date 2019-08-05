@@ -40,6 +40,9 @@ Wrote README.txt to understand this project
 Aug 4, 2019
 changed showing in table, data structure changed
 ///////////////////////////////////////////////////////////////
+Aug 5, 2019
+net::ERR_NETWORK_IO_SUSPENDED error resolved.
+Added Korean permium rate table.
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -47,6 +50,6 @@ changed showing in table, data structure changed
 
 ***NEED TO FIX***
 1. Can't use korbit api because of CORS. Need to find a way to use this.
-2. Can't use binance api because of CORS, fail to fix get rate function
+2. Can't use binance api because of CORS, fail to fix get rate function -> Can't find....fXXX
 3. Need to make another branch to manage this project
 4. net::ERR_NETWORK_IO_SUSPENDED error occured. 
