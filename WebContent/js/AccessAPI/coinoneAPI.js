@@ -14,6 +14,8 @@ function writeTableCoinone(){
 	 	$('#coinone_USD').html(numberWithCommas(KRWtoUSD(coinone_btc)) + " USD"); //실시간시세 달러
 	    $('#coinone_volume').html(coinone_btc_trade.toFixed(1) + " BTC"); //1일 거래량
 	    
+	    calculPremium(coinone_btc, "coinone");
+	    
 	    var temp = "";
 	    if(coinone_btc_fluctate > 0){ //변동률이 증가냐 감소에 따라 색변경
 	    	document.getElementById('coinone_fluctate').style.color = "red";

@@ -13,6 +13,8 @@ function writeTableUpbit(){
 	 	$('#upbit_USD').html(numberWithCommas(KRWtoUSD(upbit_btc)) + " USD"); //실시간 시세 달러
 	    $('#upbit_volume').html(upbit_btc_trade.toFixed(1) + " BTC"); //당일 거래량
 	    
+	    calculPremium(upbit_btc, "upbit");
+	    
 	    var temp = "";
 	    if(data[0]['change'] == 'RISE'){
 	    	document.getElementById('upbit_fluctate').style.color = "red";

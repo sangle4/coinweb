@@ -15,7 +15,7 @@ function writeTotalCap(){ //총 시가총액을 가져오기 위한 함수
 
 function writeTableMarketCap(){
 	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=100', function(data) {
-		console.log(data);
+		//console.log(data);
 		
 		var marketcap_btc = parseFloat(data[0]['price_usd']); //실시간 시세(달러)
 		var marketcap_btc_fluctate = parseFloat(data[0]['percent_change_24h']); //1일 변동율 %

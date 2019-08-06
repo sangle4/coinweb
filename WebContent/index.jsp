@@ -59,7 +59,7 @@
             				<td id = "upbit_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
             				<td id = "upbit_USD"></td> <!-- 빗썸 실시간 시세(달러) -->
             				<td id = "upbit_fluctate"></td> <!-- 빗썸 24시간 변동률 -->
-            				<td id = "upbit_premium"></td> <!-- 해외 거래소와의 프리미엄 차이 -->
+            				<td id = "upbit_premium" style="color : green;"></td> <!-- 해외 거래소와의 프리미엄 차이 -->
             				<td id = "upbit_volume"></td> <!-- 빗썸 거래량 -->
         				</tr>
         				<tr>
@@ -67,7 +67,7 @@
             				<td id = "bithumb_KRW"></td>
             				<td id = "bithumb_USD"></td>
             				<td id = "bithumb_fluctate"></td>
-            				<td id = "bithumb_premium"></td>
+            				<td id = "bithumb_premium" style="color : green;"></td>
             				<td id = "bithumb_volume"></td>
         				</tr>
         				<tr>
@@ -75,7 +75,7 @@
             				<td id = "coinone_KRW"></td> 
             				<td id = "coinone_USD"></td>
             				<td id = "coinone_fluctate"></td>
-            				<td id = "coinone_premium"></td>
+            				<td id = "coinone_premium" style="color : green;"></td>
             				<td id = "coinone_volume"></td>
         				</tr>
         				<tr>

@@ -7,6 +7,8 @@ function getDataFromKorbit(){
         $('#korbit_USD').html(numberWithCommas(korbit_btc) + " USD");
         $('#korbit_fluctate').html(korbit_btc_fluctate + " KRW");
         $('#korbit_trade').html(korbit_btc_trade.toFixed(1) + " BTC");
+        
+        calculPremium(bithumb_btc, "bithumb");
     });
 	
 	//console.log(data);

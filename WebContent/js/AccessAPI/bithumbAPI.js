@@ -10,7 +10,9 @@ function writeTableBithumb(){
 	    $('#bithumb_KRW').html(numberWithCommas(bithumb_btc) + " KRW"); //실시간 시세
 	    $('#bithumb_USD').html(numberWithCommas(KRWtoUSD(bithumb_btc)) + " USD"); //실시간 달러시세
 	    $('#bithumb_volume').html(bithumb_btc_trade.toFixed(1) + " BTC"); //실시간 거래량
-
+	    
+	    calculPremium(bithumb_btc, "bithumb");
+	    
 	    var temp = "";
 	    if(bithumb_btc_fluctate > 0){ //변동률이 증가냐 감소에 따라 색변경
 	    	document.getElementById('bithumb_fluctate').style.color = "red";
