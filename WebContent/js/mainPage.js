@@ -1,3 +1,5 @@
+var tableCoin = "BTC"; //10초 refresh시 사용자가 선택한 코인 탭을 기억하기 위한 변수
+
 function numberWithCommas(x) { //KRW 단위 나눔 표시 함수
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -26,16 +28,14 @@ function getUSDrate(){
 	*/
 }
 
-function tableRefresh(coin){
-	fillTable();
-}
-
-function fillTable(){
-	writeTableBithumb();
-	writeTableCoinone();
-	writeTableMarketCap();
-	writeTablePoloniex();
-	writeTableUpbit();
+function fillTable(coin){
+	tableCoin = coin; //현재 출력 코인명을 저장
+	
+	writeTableBithumb(coin);
+	writeTableCoinone(coin);
+	writeTableMarketCap(coin);
+	writeTablePoloniex(coin);
+	writeTableUpbit(coin);
 	//writeTableBinance();
 	
 	writeTotalCap();
@@ -47,11 +47,9 @@ $.ajax({
 	});
 
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
-	fillTable();
-	setInterval("fillTable()", 10000); //10초후 재시작
+	fillTable('BTC');
+	setInterval("fillTable(tableCoin)", 10000); //10초후 재시작
 	getUSDrate();
-	calculPremium(0,0);
-	
 	
 	$("#start_ajax").click(function(){ //새로고침 버튼시 실행되는 함수
 		fillTable();

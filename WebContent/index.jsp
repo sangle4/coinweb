@@ -43,9 +43,12 @@
 				<button id="start_ajax">새로고침</button>
 				<div id = "tableWithLabel">
 					<ul>
-						<li><a href = "#1" id = "tradeLabel" onclick="tableRefresh('BTC')">BTC</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="tableRefresh('ETH')">ETH</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="tableRefresh('XRP')">XRP</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('LTC')">LTC</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('XRP')">XRP</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
 					</ul>
 					<table border="1" width = 100%; id = "tradeTable" onLoad="refreshTable()">
     				<thead>
