@@ -26,6 +26,10 @@ function getUSDrate(){
 	*/
 }
 
+function tableRefresh(coin){
+	fillTable();
+}
+
 function fillTable(){
 	writeTableBithumb();
 	writeTableCoinone();

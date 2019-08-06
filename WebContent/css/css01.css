@@ -39,6 +39,7 @@
 #tradeTable {
 	text-align : center;
 	font-size : 12px;
+	margin : 0px;
 }
 
 h2 {
@@ -82,8 +83,21 @@ footer {
 	color : white;
 }
 
+#tableWithLabel {
+	border-left : 1px solid gray;
+}
+
 ul {
-	list-style-type : circle;
+	list-style : none;
+	margin : 0px 0px 0px 10px;
+	padding : 0px;
+}
+ul li {
+	float : left;
+	margin : 0px 6px;
+	padding : 0px 10px 0px 0px;
+	color : #5D5D5D;
+	border-right : 1px solid gray;
 }
 ol {
 	list-style-type: upper-roman;

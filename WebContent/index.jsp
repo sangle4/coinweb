@@ -41,8 +41,13 @@
 			<div>
 				<h1 id = "priceh1">시세표</h1>
 				<button id="start_ajax">새로고침</button>
-				
-				<table border="1" width = 98%; id = "tradeTable" onLoad="refreshTable()">
+				<div id = "tableWithLabel">
+					<ul>
+						<li><a href = "#1" id = "tradeLabel" onclick="tableRefresh('BTC')">BTC</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="tableRefresh('ETH')">ETH</a></li>
+						<li><a href = "#1" id = "tradeLabel" onclick="tableRefresh('XRP')">XRP</a></li>
+					</ul>
+					<table border="1" width = 100%; id = "tradeTable" onLoad="refreshTable()">
     				<thead>
         				<tr>
             				<th>거래소</th>
@@ -106,10 +111,11 @@
             				<td id = "marketcap_volume"></td>
       					</tr>  
     				</tfoot>
-  				</table>
+  					</table>
+  				</div>
   				<div id = "marketcap" style="padding:0px 10px; text-align:right;">
-  					<!-- 종합 표시란 -->
-  					loading...
+	  					<!-- 종합 표시란 -->
+  						loading...
   				</div>
 			</div>
 		<!--  </section> -->
@@ -121,11 +127,8 @@
 			</ol>
 		</section>
 		<section id = "s2">
-			<h2>nav</h2>
-			<ul>
-			<li>하이퍼링크들을 모아 놓은 특별한 섹션</li>
-			<li>페이지 내 목차를 만드는 용도</li>
-			</ul>
+			<h2>환차 이익 계산기</h2>
+			
 		</section>
 		<section id = "box1">
 			<h2>aside</h2>

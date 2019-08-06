@@ -44,6 +44,10 @@ Aug 5, 2019
 net::ERR_NETWORK_IO_SUSPENDED error resolved.
 Added Korean permium rate table.
 ///////////////////////////////////////////////////////////////
+Aug 6, 2019
+made function that calculate korean trade market premium
+made label on table to show both btc and another coins, need to make
+and change function to show another coins.
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 
