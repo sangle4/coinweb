@@ -51,6 +51,7 @@ and change function to show another coins.
 ///////////////////////////////////////////////////////////////
 Aug 8, 2019
 fixed poloniex, coinmarketcap table function to show another coin
+all API javascript added try-catch to fix the NO FOUND ERROR
 ///////////////////////////////////////////////////////////////
 
 
