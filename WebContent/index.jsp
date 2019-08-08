@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>Coin Web</title>
 		<link rel="stylesheet" type="text/css" href="css/css01.css">
+		<link rel="stylesheet" type="text/css" href="css/premiumCalcul.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 바이낸스 API js파일  -->
@@ -129,10 +130,46 @@
 			<li>페이지 제목, 페이지를 소개하는 간단한 섹션</li>
 			</ol>
 		</section>
-		<section id = "s2">
-			<h2>환차 이익 계산기</h2>
-			
+		
+		<section id = "premium_section">
+		
+			<h2>환차 이익 계산기<a href = "#1" id = "premium_trade" onclick="fillTable('BTC')"><i class="material-icons">keyboard_arrow_down</i></a></h2>
+			<form name = "myform">
+			<div class = "box1">
+				<p class = "pc1">
+					<input type = "text" name = "txt1" id = "txt1" placeholder = "number1" size = "5">
+				</p>
+				<p class = "pc2">
+					<input type = "radio" name = "r_op" id = "r_op1" value = "+"><br>
+					<input type = "radio" name = "r_op" id = "r_op2" value = "-"><br>
+					<input type = "radio" name = "r_op" id = "r_op3" value = "*"><br>
+					<input type = "radio" name = "r_op" id = "r_op4" value = "/"><br>
+				</p>
+				<p class = "pc2">
+					<label for = "r_op1"> + </label><br>
+					<label for = "r_op2"> - </label><br>
+					<label for = "r_op3"> * </label><br>
+					<label for = "r_op4"> / </label><br>
+				</p>
+				<p class = "pc1">
+					<input type = "text" name = "txt2" id = "txt2" placeholder = "number2" size = "5">
+				</p>
+				<p class = "pc1">
+					<input type = "button" value = "=" onclick = "calShow();">
+					<input type = "button" value = "Cancel" onclick = "cancelData();">
+				</p>
+				<p class = "pc3">
+					<input type = "checkbox" name = "ck_eval" id = "ck_eval">
+					<label for = "ck_eval">including fx</label>
+				</p>
+			</div>
+			</form>
+			<div class = "box3">
+				<div id = "msg"></div>
+			</div>
 		</section>
+		
+		
 		<section id = "box1">
 			<h2>aside</h2>
 			본문에서 약간 벗어난 노트나 팁

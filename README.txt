@@ -52,6 +52,7 @@ and change function to show another coins.
 Aug 8, 2019
 fixed poloniex, coinmarketcap table function to show another coin
 all API javascript added try-catch to fix the NO FOUND ERROR
+Premium trade calculation function outline made.
 ///////////////////////////////////////////////////////////////
 
 
@@ -60,3 +61,4 @@ all API javascript added try-catch to fix the NO FOUND ERROR
 2. Can't use binance api because of CORS, fail to fix get rate function -> Can't find....fXXX
 3. Need to make another branch to manage this project
 4. net::ERR_NETWORK_IO_SUSPENDED error occured. 
+5. Api functions simplify

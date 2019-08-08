@@ -42,7 +42,7 @@ function fillTable(coin){
 }
 
 $.ajax({
-	   url: "http://localhost:8080/testweb/",
+	   url: "http://localhost:8080/testweb/", //시간 경과로 인한 자동 서버 다운을 방지하기 위해 시간초를 넉넉하게 늘림
 	   timeout: 12000
 	});
 
@@ -53,9 +53,13 @@ $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행�
 	
 	$("#start_ajax").click(function(){ //새로고침 버튼시 실행되는 함수
 		fillTable();
-	//end start ajax
 	});
 	
+	$("#premium_trade").click(function(){ //프리미엄 계산기 펼치기
+		$('#test1').html(
+			""
+		);
+	});
 	
 //end document ready
 });

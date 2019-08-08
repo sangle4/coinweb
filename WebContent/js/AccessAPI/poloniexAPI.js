@@ -1,6 +1,6 @@
 function writeTablePoloniex(coin){
 	$.get('https://poloniex.com/public?command=returnTicker', function(data) {
-		console.log(data);
+		//console.log(data);
 		if(coin == "BCH"){ //표준 코인명과 해당거래소 내의 코인명이 다른 경우 변환
 			coin = "BCHABC";
 		}
