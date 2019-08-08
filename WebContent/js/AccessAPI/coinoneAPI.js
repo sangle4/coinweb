@@ -16,7 +16,7 @@ function writeTableCoinone(coin){
 	    $('#coinone_volume').html(coinone_coin_trade.toFixed(1) + " " + coin); //1일 거래량
 	    
 	    calculPremium(coinone_coin, "coinone", coin);
-	    
+	    //dcdc
 	    var temp = "";
 	    if(coinone_coin_fluctate > 0){ //변동률이 증가냐 감소에 따라 색변경
 	    	document.getElementById('coinone_fluctate').style.color = "red";
