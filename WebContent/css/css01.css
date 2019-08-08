@@ -60,6 +60,12 @@ h2 {
 	padding : 1px;
 }
 
+#menuTitle {
+	background-color : gray;
+	color : white;
+	padding : 1px;
+}
+
 header {
 	background-color : white;
 	padding : 0px, 0px;

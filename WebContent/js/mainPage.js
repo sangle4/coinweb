@@ -52,7 +52,7 @@ $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행�
 	getUSDrate();
 	
 	$("#start_ajax").click(function(){ //새로고침 버튼시 실행되는 함수
-		fillTable();
+		//fillTable();
 	});
 	
 	$("#premium_trade").click(function(){ //프리미엄 계산기 펼치기

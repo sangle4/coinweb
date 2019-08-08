@@ -53,6 +53,7 @@ Aug 8, 2019
 fixed poloniex, coinmarketcap table function to show another coin
 all API javascript added try-catch to fix the NO FOUND ERROR
 Premium trade calculation function outline made.
+Connected with mariaDB, made HomeController.java
 ///////////////////////////////////////////////////////////////
 
 
