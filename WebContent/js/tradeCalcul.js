@@ -18,6 +18,19 @@ function KRWtoUSD(convert){
 	}
 }
 
+function fixFloat(convert){ //해외거래소 내의 코인의 USD가격 소숫점 변화함수
+	if(convert >= 10000){
+		convert = convert.toFixed(0);
+    }
+    else if(convert >= 1000){
+    	convert = convert.toFixed(1);
+    }
+    else{
+    	convert = convert.toFixed(2);
+    }
+	return convert;
+}
+
 function calculPremium(kor, name, coin){ //한국 프리미엄 계산 함수 - kor은 원화가격, name은 해당 거래소 이름, coin은 코인명
 	var rate = 1215;
 	var url = 'https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.';

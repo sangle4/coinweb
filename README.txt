@@ -49,6 +49,8 @@ made function that calculate korean trade market premium
 made label on table to show both btc and another coins, need to make
 and change function to show another coins.
 ///////////////////////////////////////////////////////////////
+Aug 8, 2019
+fixed poloniex, coinmarketcap table function to show another coin
 ///////////////////////////////////////////////////////////////
 
 

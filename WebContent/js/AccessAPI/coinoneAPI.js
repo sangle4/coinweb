@@ -1,6 +1,6 @@
 function writeTableCoinone(coin){
 	$.get('https://api.coinone.co.kr/ticker?currency=all', function(data) {
-		console.log(data);
+		//console.log(data);
 		coin = coin.toLowerCase(); //코인원은 코인명을 소문자로 받기 때문에 소문자로 변경
 	    yesterday_coin = parseFloat(data[coin]['yesterday_last']); //변동율을 알기 위해 전날 종가를 저장
 
@@ -16,7 +16,7 @@ function writeTableCoinone(coin){
 	    $('#coinone_volume').html(coinone_coin_trade.toFixed(1) + " " + coin); //1일 거래량
 	    
 	    calculPremium(coinone_coin, "coinone", coin);
-	    //dcdctest
+	    
 	    var temp = "";
 	    if(coinone_coin_fluctate > 0){ //변동률이 증가냐 감소에 따라 색변경
 	    	document.getElementById('coinone_fluctate').style.color = "red";
