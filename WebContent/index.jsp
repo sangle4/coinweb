@@ -20,7 +20,14 @@
 		<script src = "js/tradeCalcul.js"></script> <!-- 거래 계산식모음 스크립트파일 -->
 		<script src = "js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 		<script>
-						
+		function hello(){
+			// form태그는 id로 찾지 않고 부여한 name으로 간단하게 검색가능
+			var ff = document.ff;	
+
+            // form태그 안의 값들은 따로 값을 검색하지 않아도 넘어간다
+			// submit() : action에 지정된 주소로 파라미터와 함께 전송하겠다는 의미
+			ff.submit();
+		}		
 		</script>
 	</head>
 	<body>
@@ -129,6 +136,10 @@
 			<li>페이지의 머가리</li>
 			<li>페이지 제목, 페이지를 소개하는 간단한 섹션</li>
 			</ol>
+			<form name="ff" action="testPage.jsp" method="get">
+				<input name="str">
+				<input type="button" value="이벤트" onclick="hello()">
+			</form>
 		</section>
 		
 		<section id = "premium_section">
