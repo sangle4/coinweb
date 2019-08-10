@@ -3,12 +3,12 @@ package dao;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class test_dao {
+public class user_dao {
 	private Connection con = null;
     private Statement stmt = null;
     private ResultSet rs = null;
 //드라이버 로딩
-    public test_dao(){
+    public user_dao(){
         try {
             Class.forName("org.mariadb.jdbc.Driver");
         } catch (ClassNotFoundException e) {
@@ -17,26 +17,29 @@ public class test_dao {
         }
     }
 //select 구문
-    public ArrayList<test_dto> Test_Select(){
+    public ArrayList<user_dto> User_Select(){
         String server = "jdbc:mariadb://127.0.0.1:3306"; // 서버 주소
-        String database = "test"; // DATABASE 이름
-        String user_name = "root"; // 서버 아이디
-        String password = "a9480529"; // 서버 비밀번호
+        String database = "coinWeb"; // DATABASE 이름
+        String Suser_name = "root"; // 서버 아이디
+        String Spassword = "a9480529"; // 서버 비밀번호
 
-        ArrayList<test_dto> dtos = new ArrayList<test_dto>();
+        ArrayList<user_dto> dtos = new ArrayList<user_dto>();
        //연결
         try {
-            con = DriverManager.getConnection(server + "/" + database + "?useSSL=false", user_name, password);
+            con = DriverManager.getConnection(server + "/" + database + "?useSSL=false", Suser_name, Spassword);
             stmt = con.createStatement();
-            rs = stmt.executeQuery("select * from author");
+            rs = stmt.executeQuery("SELECT * FROM USER");
             System.out.println("정상적으로 연결되었습니다.");
-
+            
             while(rs.next()){
-                int id = rs.getInt("id");
+            	int num = rs.getInt("num");
+                String id = rs.getString("id");
+                String password = rs.getString("password");
                 String name = rs.getString("name");
-                String profile = rs.getString("profile");
+                String nickname = rs.getString("nickname");
+                String email = rs.getString("email");
 
-                test_dto dto = new test_dto(id, name, profile);
+                user_dto dto = new user_dto(num, id, password, name, nickname, email);
                 dtos.add(dto);
             }
 

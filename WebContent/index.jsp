@@ -129,17 +129,15 @@
   						loading...
   				</div>
 			</div>
-		<!--  </section> -->
-		<section class="c1" id = "s1">
-			<h2>시가총액</h2>
-			<ol>
-			<li>페이지의 머가리</li>
-			<li>페이지 제목, 페이지를 소개하는 간단한 섹션</li>
-			</ol>
 			<form name="ff" action="testPage.jsp" method="get">
 				<input name="str">
-				<input type="button" value="이벤트" onclick="hello()">
+				<input type="button" value="DB test button" onclick="hello()">
 			</form>
+		<!--  </section> -->
+		<section class="c1" id = "s1">
+			<h2>시가총액 순위표</h2>
+			<div>
+			</div>
 		</section>
 		
 		<section id = "premium_section">

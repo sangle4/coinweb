@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
-<%@ page import="dao.test_dao" %>
-<%@ page import="dao.test_dto" %>
+<%@ page import="dao.user_dao" %>
+<%@ page import="dao.user_dto" %>
 <%@ page import="java.util.ArrayList" %>
 <html>
 	<head>
@@ -9,13 +9,15 @@
 	</head>
 	<body>
 		<%
-			test_dao testdao = new test_dao();
-			ArrayList<test_dto> dtos = testdao.Test_Select();
+			user_dao userdao = new user_dao();
+			ArrayList<user_dto> dtos = userdao.User_Select();
 		
 			for(int i=0; i <dtos.size(); i++){
-				test_dto dto = dtos.get(i);
+				user_dto dto = dtos.get(i);
 				out.println(dto.getID());
 				out.println(dto.getName());
+				out.println(dto.getPassword());
+				out.println(dto.getEmail());
 			}
 		%>
 	</body>
