@@ -66,6 +66,10 @@ h2 {
 	padding : 1px;
 }
 
+#rankTable {
+	border : 1px solid gray;
+}
+
 header {
 	background-color : white;
 	padding : 0px, 0px;

@@ -136,7 +136,72 @@
 		<!--  </section> -->
 		<section class="c1" id = "s1">
 			<h2>시가총액 순위표</h2>
-			<div>
+			<div id = "rankTable">
+				<table border="1" width = 100%; id = "tradeTable" onLoad="refreshTable()">
+    				<thead>
+        				<tr>
+            				<th>순위</th>
+            				<th>코인명</th>
+            				<th>시가 총액</th>
+            				<th>거래 가격</th>
+            				<th>1일 변화량</th>
+            				<th>거래량</th>
+        				</tr>
+    				</thead>
+    				<tbody>
+    					<tr>
+            				<th>업비트</th>
+            				<td id = ""></td> <!-- 빗썸 실시간 시세(원화) -->
+            				<td id = ""></td> <!-- 빗썸 실시간 시세(달러) -->
+            				<td id = ""></td> <!-- 빗썸 24시간 변동률 -->
+            				<td id = "" style="color : green;"></td> <!-- 해외 거래소와의 프리미엄 차이 -->
+            				<td id = ""></td> <!-- 빗썸 거래량 -->
+        				</tr>
+        				<tr>
+            				<th>빗썸</th>
+            				<td id = ""></td>
+            				<td id = ""></td>
+            				<td id = ""></td>
+            				<td id = "" style="color : green;"></td>
+            				<td id = ""></td>
+        				</tr>
+        				<tr>
+            				<th>코인원</th>
+            				<td id = ""></td> 
+            				<td id = ""></td>
+            				<td id = ""></td>
+            				<td id = "" style="color : green;"></td>
+            				<td id = ""></td>
+        				</tr>
+        				<tr>
+            				<th>폴로닉스</th>
+            				<td id = ""></td> 
+            				<td id = ""></td> 
+            				<td id = ""></td>
+            				<td id = ""></td>
+            				<td id = ""></td>
+        				</tr>
+        				<!-- 
+        				<tr>
+            				<th>추가</th>
+            				<td></td> 
+            				<td></td> 
+            				<td></td> 
+            				<td></td> 
+        				</tr>
+        				 -->  
+				    </tbody>			
+    				<tfoot>
+      					<tr>
+          					<th>세계 종합</th>
+          					<td id = ""></td> 
+            				<td id = ""></td> 
+            				<td id = ""></td>
+            				<td id = ""></td>
+            				<td id = ""></td>
+      					</tr>  
+    				</tfoot>
+  					</table>
 			</div>
 		</section>
 		

@@ -68,3 +68,12 @@ function writeTableMarketCap(coin){
 		
     });
 }
+
+function getRankfromMarketcap(){
+	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=20', function(data) {
+		//console.log(data);
+		
+    });
+}
+
+
