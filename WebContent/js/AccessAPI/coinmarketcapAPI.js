@@ -71,8 +71,35 @@ function writeTableMarketCap(coin){
 
 function getRankfromMarketcap(){
 	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=20', function(data) {
-		//console.log(data);
+		console.log(data);
+		rankTableBody.innerHTML = '';
 		
+		var totalSupply;
+		var inner = "";
+	
+		
+		for(var i = 0; i<20; i++){
+			if(data[i]['max_supply'] == null)
+				totalSupply = 'unlimited';
+			else
+				totalSupply = data[i]['max_supply'];
+			
+			inner += '<tr id = "rankTR">';
+			inner += '<td id = "rankTD">' + (i+1) + '</td>' + //rank
+									'<td>' + data[i]['name'] + '</td>' + //코인 명
+									'<td>' + data[i]['symbol'] + '</td>' + //코인 명
+									'<td>' + data[i]['market_cap_usd'] + '</td>' + //시가 총액
+									'<td>' + data[i]['price_usd'] + '</td>' + //거래가격
+									'<td>' + data[i]['percent_change_24h'] + "%" + '</td>'+ //1일 변화량
+									'<td>' + data[i]['24h_volume_usd'] + '</td>'+ //1일 거래량
+									'<td>' + totalSupply + '</td>'+ //총 발행량
+									'<td>' + data[i]['total_supply'] + '</td>'; //공급량
+			
+			//data[i]['id']
+			
+			inner += '</tr>';
+		}
+		rankTableBody.innerHTML = inner;
     });
 }
 

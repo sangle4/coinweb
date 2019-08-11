@@ -19,13 +19,13 @@ function writeTableUpbit(coin){
 		    
 		    var temp = "";
 		    if(data[0]['change'] == 'RISE'){
-		    	document.getElementById('upbit_fluctate').style.color = "red";
+		    	document.getElementById('upbit_fluctate').style.color = "#FF5E00";
 		    	temp += "▲  " + numberWithCommas(upbit_coin_fluctate) + " KRW";
 		    	temp += "　+" + fluctateRate + "%"
 		    	$('#upbit_fluctate').html(temp);
 		    }
 		    else{
-		    	document.getElementById('upbit_fluctate').style.color = "blue";
+		    	document.getElementById('upbit_fluctate').style.color = "#0054FF";
 		    	temp += "▼  " + numberWithCommas(upbit_coin_fluctate) + " KRW";
 		    	temp += "　-" + fluctateRate + "%"
 		    	$('#upbit_fluctate').html(temp);

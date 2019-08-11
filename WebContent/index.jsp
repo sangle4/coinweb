@@ -46,7 +46,7 @@
 		</nav>
 		<!-- <section class="c1" id = "trade"> -->
 			
-			<div>
+			<div style="text-align : center;">
 				<h1 id = "priceh1">시세표</h1>
 				<button id="start_ajax">새로고침</button>
 				<div id = "tableWithLabel">
@@ -58,9 +58,9 @@
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
 					</ul>
-					<table border="1" width = 100%; id = "tradeTable" onLoad="refreshTable()">
+					<table width = 100%; onLoad="refreshTable()">
     				<thead>
-        				<tr>
+        				<tr id = "tradeTR" style = "background-color : #EAEAEA">
             				<th>거래소</th>
             				<th>실시간 시세(KRW)</th>
             				<th>실시간 시세(USD)</th>
@@ -70,32 +70,32 @@
         				</tr>
     				</thead>
     				<tbody>
-    					<tr>
-            				<th>업비트</th>
+    					<tr id = "tradeTR">
+            				<td>업비트</td>
             				<td id = "upbit_KRW"></td> <!-- 빗썸 실시간 시세(원화) -->
             				<td id = "upbit_USD"></td> <!-- 빗썸 실시간 시세(달러) -->
             				<td id = "upbit_fluctate"></td> <!-- 빗썸 24시간 변동률 -->
             				<td id = "upbit_premium" style="color : green;"></td> <!-- 해외 거래소와의 프리미엄 차이 -->
             				<td id = "upbit_volume"></td> <!-- 빗썸 거래량 -->
         				</tr>
-        				<tr>
-            				<th>빗썸</th>
+        				<tr id = "tradeTR">
+            				<td>빗썸</td>
             				<td id = "bithumb_KRW"></td>
             				<td id = "bithumb_USD"></td>
             				<td id = "bithumb_fluctate"></td>
             				<td id = "bithumb_premium" style="color : green;"></td>
             				<td id = "bithumb_volume"></td>
         				</tr>
-        				<tr>
-            				<th>코인원</th>
+        				<tr id = "tradeTR">
+            				<td>코인원</td>
             				<td id = "coinone_KRW"></td> 
             				<td id = "coinone_USD"></td>
             				<td id = "coinone_fluctate"></td>
             				<td id = "coinone_premium" style="color : green;"></td>
             				<td id = "coinone_volume"></td>
         				</tr>
-        				<tr>
-            				<th>폴로닉스</th>
+        				<tr id = "tradeTR">
+            				<td>폴로닉스</td>
             				<td id = "poloniex_KRW"></td> 
             				<td id = "poloniex_USD"></td> 
             				<td id = "poloniex_fluctate"></td>
@@ -113,8 +113,8 @@
         				 -->  
 				    </tbody>			
     				<tfoot>
-      					<tr>
-          					<th>세계 종합</th>
+      					<tr id = "tradeTR">
+          					<td>세계 종합</td>
           					<td id = "marketcap_KRW"></td> 
             				<td id = "marketcap_USD"></td> 
             				<td id = "marketcap_fluctate"></td>
@@ -124,83 +124,33 @@
     				</tfoot>
   					</table>
   				</div>
-  				<div id = "marketcap" style="padding:0px 10px; text-align:right;">
+  				<div id = "marketcap" style="padding:0px 10px; text-align : right;">
 	  					<!-- 종합 표시란 -->
   						loading...
   				</div>
 			</div>
-			<form name="ff" action="testPage.jsp" method="get">
-				<input name="str">
-				<input type="button" value="DB test button" onclick="hello()">
-			</form>
+			
 		<!--  </section> -->
 		<section class="c1" id = "s1">
 			<h2>시가총액 순위표</h2>
-			<div id = "rankTable">
-				<table border="1" width = 100%; id = "tradeTable" onLoad="refreshTable()">
-    				<thead>
-        				<tr>
+			<div id = "rankTableDiv" style="text-align : center;">
+				<table width = 100%; onLoad="refreshTable()">
+    				<thead id = "rankHead">
+        				<tr style = "background-color : #EAEAEA">
             				<th>순위</th>
             				<th>코인명</th>
+            				<th>심볼</th>
             				<th>시가 총액</th>
             				<th>거래 가격</th>
             				<th>1일 변화량</th>
-            				<th>거래량</th>
+            				<th>1일 거래량</th>
+            				<th>총 발행량</th>
+            				<th>유통량</th>
         				</tr>
     				</thead>
-    				<tbody>
-    					<tr>
-            				<th>업비트</th>
-            				<td id = ""></td> <!-- 빗썸 실시간 시세(원화) -->
-            				<td id = ""></td> <!-- 빗썸 실시간 시세(달러) -->
-            				<td id = ""></td> <!-- 빗썸 24시간 변동률 -->
-            				<td id = "" style="color : green;"></td> <!-- 해외 거래소와의 프리미엄 차이 -->
-            				<td id = ""></td> <!-- 빗썸 거래량 -->
-        				</tr>
-        				<tr>
-            				<th>빗썸</th>
-            				<td id = ""></td>
-            				<td id = ""></td>
-            				<td id = ""></td>
-            				<td id = "" style="color : green;"></td>
-            				<td id = ""></td>
-        				</tr>
-        				<tr>
-            				<th>코인원</th>
-            				<td id = ""></td> 
-            				<td id = ""></td>
-            				<td id = ""></td>
-            				<td id = "" style="color : green;"></td>
-            				<td id = ""></td>
-        				</tr>
-        				<tr>
-            				<th>폴로닉스</th>
-            				<td id = ""></td> 
-            				<td id = ""></td> 
-            				<td id = ""></td>
-            				<td id = ""></td>
-            				<td id = ""></td>
-        				</tr>
-        				<!-- 
-        				<tr>
-            				<th>추가</th>
-            				<td></td> 
-            				<td></td> 
-            				<td></td> 
-            				<td></td> 
-        				</tr>
-        				 -->  
-				    </tbody>			
-    				<tfoot>
-      					<tr>
-          					<th>세계 종합</th>
-          					<td id = ""></td> 
-            				<td id = ""></td> 
-            				<td id = ""></td>
-            				<td id = ""></td>
-            				<td id = ""></td>
-      					</tr>  
-    				</tfoot>
+    				<tbody id = "rankTableBody">
+    					  
+				    </tbody>
   					</table>
 			</div>
 		</section>
@@ -243,6 +193,10 @@
 			</div>
 		</section>
 		
+		<form name="ff" action="testPage.jsp" method="get">
+			<input name="str">
+			<input type="button" value="DB test button" onclick="hello()">
+		</form>
 		
 		<section id = "box1">
 			<h2>aside</h2>

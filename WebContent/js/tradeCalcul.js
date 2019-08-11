@@ -19,7 +19,7 @@ function KRWtoUSD(convert){
 }
 
 function errorThrow(name, coin){ //해당 코인을 찾지 못했을 때 출력하는 에러 함수
-	console.log(coin + " is not in this " + name + " cyptocurrency market.");
+	//console.log(coin + " is not in this " + name + " cyptocurrency market.");
 }
 
 function fixFloat(convert){ //해외거래소 내의 코인의 USD가격 소숫점 변화함수

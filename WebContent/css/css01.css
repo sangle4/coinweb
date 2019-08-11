@@ -15,8 +15,41 @@
 	margin : 10px;
 }
 
-#trade {
-	border : solid 2px gray;
+table, th, td {
+	margin:20;
+	padding:10;
+	border-spacing:0;
+	border-collapse:collapse;
+	border-bottom : 1px solid #BDBDBD;
+	font-family: Gulim, Tahoma, Arial, sans-serif;
+	font-weight : normal;
+	font-size : 13px;
+}
+
+th {
+	height : 25px;
+}
+
+td {
+	height : 20px;
+}
+
+#tableWithLabel {
+	font-family: Gulim, Tahoma, Arial, sans-serif;
+	font-weight : normal;
+	font-size : 13px;
+}
+
+#rankTR:nth-child(even) {
+	background-color : #FAFAFA;
+}
+
+#tradeTR:nth-child(even) {
+	background-color : #F6F6F6;
+}
+
+#rankTD {
+	height : 40px;
 }
 
 #box1 {
@@ -48,12 +81,6 @@
 	float : left;
 }
 
-#tradeTable {
-	text-align : center;
-	font-size : 12px;
-	margin : 0px;
-}
-
 h2 {
 	background-color : gray;
 	color : white;
@@ -66,8 +93,8 @@ h2 {
 	padding : 1px;
 }
 
-#rankTable {
-	border : 1px solid gray;
+#rankHead {
+	font-size : 20px;
 }
 
 header {
@@ -103,10 +130,6 @@ footer {
 	width : 100%;
 	text-align : center;
 	color : white;
-}
-
-#tableWithLabel {
-	border-left : 1px solid gray;
 }
 
 ul {

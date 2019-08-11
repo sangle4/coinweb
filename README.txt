@@ -62,6 +62,9 @@ Made Dao and Dto to access DB
 Made new db to access and user table
 file directory changed
 ///////////////////////////////////////////////////////////////
+Aug 11, 2019
+Fixed main css, table style changed
+Top 20 rank table made, need to add coin picture in rank
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -74,5 +77,8 @@ file directory changed
 1. Can't use korbit api because of CORS. Need to find a way to use this.
 2. Can't use binance api because of CORS, fail to fix get rate function -> Can't find....fXXX
 3. Need to make another branch to manage this project
-4. net::ERR_NETWORK_IO_SUSPENDED error occured. 
-5. Api functions simplify
+4. Api functions simplify
+5. need to add coin picture in rank
+
+***BUG FIXED***
+1. net::ERR_NETWORK_IO_SUSPENDED error occured.
