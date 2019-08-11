@@ -115,7 +115,7 @@ nav {
 	padding : 1px;
 	text-align : center;
 	color : white;
-	background-color : gray;
+	background-color : #BDBDBD;
 }
 
 #na {
@@ -134,41 +134,75 @@ footer {
 
 ul {
 	list-style : none;
-	margin : 0px 0px 0px 10px;
+	margin : 0px;
 	padding : 0px;
 }
-ul li {
+li {
 	float : left;
-	margin : 0px 6px;
-	padding : 0px 10px 0px 0px;
+	margin : 0px;
+	padding : 0px;
 	color : #5D5D5D;
-	border-right : 1px solid gray;
+	border-top : 1px solid #EAEAEA;
+	height : 20px;
+	text-align : center;
 }
 ol {
 	list-style-type: upper-roman;
+}
+
+#tradeLabel {
+	
 }
 
 #hyperLink {
 	color : green;
 }
 
-#na:link {
-	color : white;
+#nav:link {
 	text-decoration : none;
+	color : white;
 	display : inline-block;
 }
-#na:visited {
+#nav:visited {
+	text-decoration : none;
 	background-color : green;
 	color : white;
 	display : inline-block;
 }
-#na:hover {
+#nav:hover {
+	text-decoration : none;
 	background-color : gray;
 	color : black;
 	display : inline-block;
 }
-#na:active {
+#nav:active {
+	text-decoration : none;
 	background-color : red;
 	color : white;
+	display : inline-block;
+}
+
+li:hover {
+	text-decoration : underline;
+	background-color : #EAEAEA;
+	color : black;
+	display : inline-block;
+}
+li:visited {
+	text-decoration : none;
+	background-color : red;
+	color : black;
+	display : inline-block;
+}
+li:active {
+	text-decoration : none;
+	background-color : #EAEAEA;
+	color : black;
+	display : inline-block;
+}
+li:link {
+	text-decoration : none;
+	background-color : red;
+	color : black;
 	display : inline-block;
 }

@@ -51,12 +51,12 @@
 				<!-- <button id="start_ajax">새로고침</button> -->
 				<div id = "tableWithLabel">
 					<ul>
-						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
+						<li style = "border-left : 1px solid #EAEAEA;"><a href = "#1" id = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('LTC')">LTC</a></li>
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('XRP')">XRP</a></li>
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
+						<li style = "border-right : 1px solid #EAEAEA;"><a href = "#1" id = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
 					</ul>
 					<table width = 100%; onLoad="refreshTable()">
     				<thead>
