@@ -71,13 +71,10 @@ function writeTableMarketCap(coin){
 
 function getRankfromMarketcap(){
 	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=20', function(data) {
-		console.log(data);
-		rankTableBody.innerHTML = '';
-		
+		//console.log(data);
 		var totalSupply;
-		var inner = "";
+		var inner = ""; //한 줄씩 추가하면 css 스타일을 인식하지 못하기 때문에 한번에 받아서 넘겨주어야 함
 	
-		
 		for(var i = 0; i<20; i++){
 			if(data[i]['max_supply'] == null)
 				totalSupply = 'unlimited';
@@ -94,8 +91,6 @@ function getRankfromMarketcap(){
 									'<td>' + data[i]['24h_volume_usd'] + '</td>'+ //1일 거래량
 									'<td>' + totalSupply + '</td>'+ //총 발행량
 									'<td>' + data[i]['total_supply'] + '</td>'; //공급량
-			
-			//data[i]['id']
 			
 			inner += '</tr>';
 		}

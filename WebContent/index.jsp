@@ -48,7 +48,7 @@
 			
 			<div style="text-align : center;">
 				<h1 id = "priceh1">시세표</h1>
-				<button id="start_ajax">새로고침</button>
+				<!-- <button id="start_ajax">새로고침</button> -->
 				<div id = "tableWithLabel">
 					<ul>
 						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
