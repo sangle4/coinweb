@@ -41,12 +41,64 @@ function fillTable(coin){
 	writeTotalCap();
 }
 
+function changeLabelBC(){
+	if(tableCoin == "BTC"){
+		$(".LiBTC").css({"background" : "#EAEAEA"});
+		$(".LiETH").css({"background" : "white"});
+		$(".LiLTC").css({"background" : "white"});
+		$(".LiXRP").css({"background" : "white"});
+		$(".LiADA").css({"background" : "white"});
+		$(".LiBCH").css({"background" : "white"});
+	}
+	else if(tableCoin == "ETH"){
+		$(".LiBTC").css({"background" : "white"});
+		$(".LiETH").css({"background" : "#EAEAEA"});
+		$(".LiLTC").css({"background" : "white"});
+		$(".LiXRP").css({"background" : "white"});
+		$(".LiADA").css({"background" : "white"});
+		$(".LiBCH").css({"background" : "white"});
+	}
+	else if(tableCoin == "LTC"){
+		$(".LiBTC").css({"background" : "white"});
+		$(".LiETH").css({"background" : "white"});
+		$(".LiLTC").css({"background" : "#EAEAEA"});
+		$(".LiXRP").css({"background" : "white"});
+		$(".LiADA").css({"background" : "white"});
+		$(".LiBCH").css({"background" : "white"});
+	}	
+	else if(tableCoin == "XRP"){
+		$(".LiBTC").css({"background" : "white"});
+		$(".LiETH").css({"background" : "white"});
+		$(".LiLTC").css({"background" : "white"});
+		$(".LiXRP").css({"background" : "#EAEAEA"});
+		$(".LiADA").css({"background" : "white"});
+		$(".LiBCH").css({"background" : "white"});
+	}	
+	else if(tableCoin == "ADA"){
+		$(".LiBTC").css({"background" : "white"});
+		$(".LiETH").css({"background" : "white"});
+		$(".LiLTC").css({"background" : "white"});
+		$(".LiXRP").css({"background" : "white"});
+		$(".LiADA").css({"background" : "#EAEAEA"});
+		$(".LiBCH").css({"background" : "white"});
+	}	
+	else {
+		$(".LiBTC").css({"background" : "white"});
+		$(".LiETH").css({"background" : "white"});
+		$(".LiLTC").css({"background" : "white"});
+		$(".LiXRP").css({"background" : "white"});
+		$(".LiADA").css({"background" : "white"});
+		$(".LiBCH").css({"background" : "#EAEAEA"});
+	}
+}
+
 $.ajax({
 	   url: "http://localhost:8080/testweb/", //시간 경과로 인한 자동 서버 다운을 방지하기 위해 시간초를 넉넉하게 늘림
 	   timeout: 12000
 	});
 
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
+	$(".LiBTC").css({"background" : "#EAEAEA"});
 	fillTable('BTC');
 	setInterval("fillTable(tableCoin)", 10000); //10초후 재시작
 	getUSDrate();
@@ -60,6 +112,10 @@ $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행�
 		$('#test1').html(
 			""
 		);
+	});
+	
+	$(".tradeLabel").click(function(){ //시세표 라벨 클릭시
+		changeLabelBC();	
 	});
 	
 //end document ready

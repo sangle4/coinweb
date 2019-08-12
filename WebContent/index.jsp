@@ -36,13 +36,13 @@
 				<h1 id = "mainTitle"><a href = "http://localhost:8080/testweb/" id = "ad">코인웹</a></h1>
 		</header>
 		
-		<nav>
-			<a href="#s1" id = "na"><i class="material-icons">cloud</i></a>&nbsp;&nbsp;
-			<a href="#s2" id = "na">[nav]</a>&nbsp;&nbsp;
-			<a href="#s3" id = "na">[section]</a>&nbsp;&nbsp;
-			<a href="#s4" id = "na">[article]</a>&nbsp;&nbsp;
-			<a href="#s5" id = "na">[aside]</a>&nbsp;&nbsp;
-			<a href="#s6" id = "na">[footer]</a>&nbsp;&nbsp;
+		<nav class = "mainNAV">
+			<a href="#s1" class = "na"><i class="material-icons">cloud</i></a>&nbsp;&nbsp;
+			<a href="#s2" class = "na">[nav]</a>&nbsp;&nbsp;
+			<a href="#s3" class = "na">[section]</a>&nbsp;&nbsp;
+			<a href="#s4" class = "na">[article]</a>&nbsp;&nbsp;
+			<a href="#s5" class = "na">[aside]</a>&nbsp;&nbsp;
+			<a href="#s6" class = "na">[footer]</a>&nbsp;&nbsp;
 		</nav>
 		<!-- <section class="c1" id = "trade"> -->
 			
@@ -51,12 +51,12 @@
 				<!-- <button id="start_ajax">새로고침</button> -->
 				<div id = "tableWithLabel">
 					<ul>
-						<li style = "border-left : 1px solid #EAEAEA;"><a href = "#1" id = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('LTC')">LTC</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('XRP')">XRP</a></li>
-						<li><a href = "#1" id = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
-						<li style = "border-right : 1px solid #EAEAEA;"><a href = "#1" id = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
+						<li class = "LiBTC" style = "border-left : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
+						<li class = "LiETH"><a href = "#1" class = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
+						<li class = "LiLTC"><a href = "#1" class = "tradeLabel" onclick="fillTable('LTC')">LTC</a></li>
+						<li class = "LiXRP"><a href = "#1" class = "tradeLabel" onclick="fillTable('XRP')">XRP</a></li>
+						<li class = "LiADA"><a href = "#1" class = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
+						<li class = "LiBCH" style = "border-right : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
 					</ul>
 					<table width = 100%; onLoad="refreshTable()">
     				<thead>
@@ -146,6 +146,7 @@
             				<th>1일 거래량</th>
             				<th>총 발행량</th>
             				<th>유통량</th>
+            				<th>발행 대비 유통량</th>
         				</tr>
     				</thead>
     				<tbody id = "rankTableBody">

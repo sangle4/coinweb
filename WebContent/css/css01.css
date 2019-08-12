@@ -76,7 +76,7 @@ td {
 #priceh1 {
 	color : gray;
 	font-size : 25px;
-	margin : 10px;
+	margin : 40px 0px 0px 0px;
 	padding : 0px 10px;
 	text-align : left;
 }
@@ -106,8 +106,8 @@ header {
 	color : white;
 }
 
-nav {
-	padding : 0px, 0px;
+.mainNAV {
+	padding : 0px 0px 0px 0px;
 	border : 2px;
 	margin : 10px;
 	width : 98%;
@@ -116,6 +116,10 @@ nav {
 	text-align : center;
 	color : white;
 	background-color : #BDBDBD;
+}
+
+nav {
+	
 }
 
 #na {
@@ -139,8 +143,8 @@ ul {
 }
 li {
 	float : left;
-	margin : 0px;
-	padding : 0px;
+	margin : 0px 0px 0px 0px;
+	padding : 5px 0px 0px 0px;
 	color : #5D5D5D;
 	border-top : 1px solid #EAEAEA;
 	height : 20px;
@@ -150,59 +154,25 @@ ol {
 	list-style-type: upper-roman;
 }
 
-#tradeLabel {
-	
+#middleLabel {
+	margin : 0px;
+	padding : 0px;
 }
 
 #hyperLink {
 	color : green;
 }
 
-#nav:link {
+a {
 	text-decoration : none;
-	color : white;
-	display : inline-block;
-}
-#nav:visited {
-	text-decoration : none;
-	background-color : green;
-	color : white;
-	display : inline-block;
-}
-#nav:hover {
-	text-decoration : none;
-	background-color : gray;
-	color : black;
-	display : inline-block;
-}
-#nav:active {
-	text-decoration : none;
-	background-color : red;
-	color : white;
-	display : inline-block;
 }
 
-li:hover {
-	text-decoration : underline;
-	background-color : #EAEAEA;
+.tradeLabel {
+	margin : 0px 10px 0px 10px;
 	color : black;
-	display : inline-block;
 }
-li:visited {
-	text-decoration : none;
-	background-color : red;
-	color : black;
-	display : inline-block;
-}
-li:active {
-	text-decoration : none;
-	background-color : #EAEAEA;
-	color : black;
-	display : inline-block;
-}
-li:link {
-	text-decoration : none;
-	background-color : red;
-	color : black;
+
+a.tradeLabel:hover {
+	color : gray;
 	display : inline-block;
 }

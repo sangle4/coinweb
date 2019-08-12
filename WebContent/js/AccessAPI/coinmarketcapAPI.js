@@ -71,27 +71,34 @@ function writeTableMarketCap(coin){
 
 function getRankfromMarketcap(){
 	$.get('https://api.coinmarketcap.com/v1/ticker/?limit=20', function(data) {
-		//console.log(data);
+		console.log(data);
 		var totalSupply;
 		var inner = ""; //한 줄씩 추가하면 css 스타일을 인식하지 못하기 때문에 한번에 받아서 넘겨주어야 함
+		var volPercent; //발행량 대비 유통량 퍼센티지
 	
 		for(var i = 0; i<20; i++){
-			if(data[i]['max_supply'] == null)
+			if(data[i]['max_supply'] == null){
 				totalSupply = 'unlimited';
-			else
+				volPercent = '-';
+			}
+			else {
 				totalSupply = data[i]['max_supply'];
+				volPercent = (data[i]['total_supply']*100/totalSupply).toFixed(2) + "%";
+			}
+			if(totalSupply != 'unlimited')
+				totlalSupply = (totalSupply*1).toFixed(0);
 			
 			inner += '<tr id = "rankTR">';
 			inner += '<td id = "rankTD">' + (i+1) + '</td>' + //rank
 									'<td>' + data[i]['name'] + '</td>' + //코인 명
-									'<td>' + data[i]['symbol'] + '</td>' + //코인 명
-									'<td>' + data[i]['market_cap_usd'] + '</td>' + //시가 총액
-									'<td>' + data[i]['price_usd'] + '</td>' + //거래가격
+									'<td>' + data[i]['symbol'] + '</td>' + //코인 심볼명
+									'<td>' + (data[i]['market_cap_usd']*1).toFixed(0) + '</td>' + //시가 총액
+									'<td>' + (data[i]['price_usd']*1).toFixed(2) + '</td>' + //거래가격
 									'<td>' + data[i]['percent_change_24h'] + "%" + '</td>'+ //1일 변화량
-									'<td>' + data[i]['24h_volume_usd'] + '</td>'+ //1일 거래량
+									'<td>' + (data[i]['24h_volume_usd']*1).toFixed(0) + '</td>'+ //1일 거래량
 									'<td>' + totalSupply + '</td>'+ //총 발행량
-									'<td>' + data[i]['total_supply'] + '</td>'; //공급량
-			
+									'<td>' + (data[i]['total_supply']*1).toFixed(0) + '</td>' + //공급량
+									'<td>' + volPercent + '</td>'; //발행량 대비 공급량 퍼센티지
 			inner += '</tr>';
 		}
 		rankTableBody.innerHTML = inner;
