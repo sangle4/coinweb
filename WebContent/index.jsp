@@ -59,7 +59,7 @@
 						<li class = "LiADA"><a href = "#1" class = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
 						<li class = "LiBCH" style = "border-right : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
 					</ul>
-					<table width = 100%; onLoad="refreshTable()">
+					<table width = 100%; onLoad="refreshTable()" style = "border : 1px solid #BDBDBD;">
     				<thead>
         				<tr id = "tradeTR" style = "background-color : #EAEAEA">
             				<th>거래소</th>
@@ -142,7 +142,7 @@
 					<table width = 100%; onLoad="refreshTable()">
     					<thead id = "rankHead">
         					<tr style = "background-color : #EAEAEA">
-            					<th>순위</th>
+            					<th>　순위　</th>
             					<th>코인명</th>
             					<th>심볼</th>
             					<th>시가 총액</th>

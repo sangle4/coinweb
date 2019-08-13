@@ -86,9 +86,10 @@ td {
 
 .login_tab {
 	display : inline-block;
-	width : 255px;
+	width : 265px;
 	height : 200px;
 	border : 1px solid #BDBDBD;
+	margin : 10px 10px 10px 0px;
 }
 
 .rank_section {
@@ -99,14 +100,16 @@ td {
 }
 
 .rankTableDiv {
-	
+	margin : 10px 0px 10px 0px;
+	border : 1px solid #BDBDBD;
 }
 
 .aside_tab {
 	display : inline-block;
-	width : 185px;
+	width : 195px;
 	height : 850px;
 	border : 1px solid #BDBDBD;
+	margin : 10px 10px 10px 0px;
 }
 
 #h1 {
