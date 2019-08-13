@@ -37,19 +37,20 @@
 		</header>
 		
 		<nav class = "mainNAV">
-			<a href="#s1" class = "na"><i class="material-icons">cloud</i></a>&nbsp;&nbsp;
-			<a href="#s2" class = "na">[nav]</a>&nbsp;&nbsp;
-			<a href="#s3" class = "na">[section]</a>&nbsp;&nbsp;
-			<a href="#s4" class = "na">[article]</a>&nbsp;&nbsp;
-			<a href="#s5" class = "na">[aside]</a>&nbsp;&nbsp;
-			<a href="#s6" class = "na">[footer]</a>&nbsp;&nbsp;
+			<!-- <i class="material-icons">cloud</i> -->
+			<a href="#s0" class = "menuLabel"><i class="material-icons">home</i></a>&nbsp;&nbsp;
+			<a href="#s1" class = "menuLabel">[menu]</a>&nbsp;&nbsp;
+			<a href="#s2" class = "menuLabel">[nav]</a>&nbsp;&nbsp;
+			<a href="#s3" class = "menuLabel">[section]</a>&nbsp;&nbsp;
+			<a href="#s4" class = "menuLabel">[article]</a>&nbsp;&nbsp;
+			<a href="#s5" class = "menuLabel">[aside]</a>&nbsp;&nbsp;
+			<a href="#s6" class = "menuLabel">[footer]</a>&nbsp;&nbsp;
 		</nav>
-		<!-- <section class="c1" id = "trade"> -->
-			
-			<div style="text-align : center;">
-				<h1 id = "priceh1">시세표</h1>
-				<!-- <button id="start_ajax">새로고침</button> -->
-				<div id = "tableWithLabel">
+		
+		<div class = "contents">
+			<div class = "contents_trade_table" style="text-align : center;">
+				<!-- <h1 id = "priceh1">시세표</h1> -->
+				
 					<ul>
 						<li class = "LiBTC" style = "border-left : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
 						<li class = "LiETH"><a href = "#1" class = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
@@ -123,40 +124,54 @@
       					</tr>  
     				</tfoot>
   					</table>
-  				</div>
+
   				<div id = "marketcap" style="padding:0px 10px; text-align : right;">
-	  					<!-- 종합 표시란 -->
   						loading...
   				</div>
 			</div>
 			
-		<!--  </section> -->
-		<section class="c1" id = "s1">
-			<h2>시가총액 순위표</h2>
-			<div id = "rankTableDiv" style="text-align : center;">
-				<table width = 100%; onLoad="refreshTable()">
-    				<thead id = "rankHead">
-        				<tr style = "background-color : #EAEAEA">
-            				<th>순위</th>
-            				<th>코인명</th>
-            				<th>심볼</th>
-            				<th>시가 총액</th>
-            				<th>거래 가격</th>
-            				<th>1일 변화량</th>
-            				<th>1일 거래량</th>
-            				<th>총 발행량</th>
-            				<th>유통량</th>
-            				<th>발행 대비 유통량</th>
-        				</tr>
-    				</thead>
-    				<tbody id = "rankTableBody">
-    					  
-				    </tbody>
-  					</table>
+			<div class = "login_tab">
+				
 			</div>
-		</section>
+			
+			
+			<div class="rank_section" id = "s1" style = "float : left;"> <!-- 시가총액 섹션 -->
+				<!-- <h2>시가총액 순위표</h2> -->
+				<div class = "rankTableDiv" style="text-align : center;">
+				
+					<table width = 100%; onLoad="refreshTable()">
+    					<thead id = "rankHead">
+        					<tr style = "background-color : #EAEAEA">
+            					<th>순위</th>
+            					<th>코인명</th>
+            					<th>심볼</th>
+            					<th>시가 총액</th>
+            					<th>거래 가격</th>
+            					<th>1일 변화량</th>
+            					<th>1일 거래량</th>
+            					<th>총 발행량</th>
+            					<th>유통량</th>
+            					<th>발행 대비 유통량</th>
+        					</tr>
+    					</thead>
+    					<tbody id = "rankTableBody">
+    					  
+				    	</tbody>
+  					</table>
+				</div>
+			</div>
+			
+			<div class = "aside_tab">
+				
+			</div>
+			
+			
+		</div>
 		
-		<section id = "premium_section">
+		
+		
+		<!-- 
+		<section id = "premium_section" style = "float : left;">
 		
 			<h2>환차 이익 계산기<a href = "#1" id = "premium_trade" onclick="fillTable('BTC')"><i class="material-icons">keyboard_arrow_down</i></a></h2>
 			<form name = "myform">
@@ -219,6 +234,10 @@
 			e-mail: sangle4@naver.com
 			</p>
 		</footer>
+		-->
+		
+		<!--
 		<a href="https://eclass.dongguk.edu/index.jsp"><img src="https://eclass.dongguk.edu/lmsdata/img/template1/logo.png"></a>
+		-->
 	</body>
 </html>

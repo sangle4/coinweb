@@ -34,11 +34,6 @@ td {
 	height : 20px;
 }
 
-#tableWithLabel {
-	font-family: Gulim, Tahoma, Arial, sans-serif;
-	font-weight : normal;
-	font-size : 13px;
-}
 
 #rankTR:nth-child(even) {
 	background-color : #FAFAFA;
@@ -66,6 +61,52 @@ td {
 	color : black;
 	padding : 1px;
 	float : left;
+}
+
+.contents {
+	display : inline-block;
+	width : 1000px;
+	height : 1500px;
+	border : 1px solid white;
+	
+	margin : 0px 220px 10px 220px;
+}
+
+.contents_trade_table {
+	display : inline-block;
+	width : 700px;
+	height : 200px;
+	border : 1px solid white;
+	float : left;
+	
+	font-family: Gulim, Tahoma, Arial, sans-serif;
+	font-weight : normal;
+	font-size : 13px;
+}
+
+.login_tab {
+	display : inline-block;
+	width : 240px;
+	height : 200px;
+	border : 1px solid #BDBDBD;
+}
+
+.rank_section {
+	display : inline-block;
+	border : 1px solid white;
+	width : 700px;
+	float : left;
+}
+
+.rankTableDiv {
+	
+}
+
+.aside_tab {
+	display : inline-block;
+	width : 240px;
+	height : 850px;
+	border : 1px solid #BDBDBD;
 }
 
 #h1 {
@@ -101,7 +142,7 @@ header {
 	background-color : white;
 	padding : 0px, 0px;
 	border : 10px;
-	margin : 5px;
+	margin : 10px 220px 10px 220px;
 	width : 100%;
 	color : white;
 }
@@ -109,13 +150,13 @@ header {
 .mainNAV {
 	padding : 0px 0px 0px 0px;
 	border : 2px;
-	margin : 10px;
-	width : 98%;
+	margin : 10px 220px 10px 220px;
+	width : 1000px;
 	height : 40px;
 	padding : 1px;
-	text-align : center;
+	
 	color : white;
-	background-color : #BDBDBD;
+	background-color : #EAEAEA;
 }
 
 nav {
@@ -174,5 +215,15 @@ a {
 
 a.tradeLabel:hover {
 	color : gray;
+	display : inline-block;
+}
+
+.menuLabel {
+	margin : -10px 10px -10px 10px;
+	color : #747474;
+}
+
+a.menuLabel:hover {
+	color : black;
 	display : inline-block;
 }
