@@ -86,7 +86,7 @@ td {
 
 .login_tab {
 	display : inline-block;
-	width : 240px;
+	width : 255px;
 	height : 200px;
 	border : 1px solid #BDBDBD;
 }
@@ -94,7 +94,7 @@ td {
 .rank_section {
 	display : inline-block;
 	border : 1px solid white;
-	width : 700px;
+	width : 770px;
 	float : left;
 }
 
@@ -104,7 +104,7 @@ td {
 
 .aside_tab {
 	display : inline-block;
-	width : 240px;
+	width : 185px;
 	height : 850px;
 	border : 1px solid #BDBDBD;
 }
