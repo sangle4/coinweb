@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/css01.css">
 		<link rel="stylesheet" type="text/css" href="css/premiumCalcul.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 바이낸스 API js파일  -->
 		<script src = "js/AccessAPI/bithumbAPI.js"></script> <!-- 빗썸 API js파일  -->
@@ -49,8 +50,6 @@
 		
 		<div class = "contents">
 			<div class = "contents_trade_table" style="text-align : center;">
-				<!-- <h1 id = "priceh1">시세표</h1> -->
-				
 					<ul>
 						<li class = "LiBTC" style = "border-left : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
 						<li class = "LiETH"><a href = "#1" class = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
@@ -125,7 +124,7 @@
     				</tfoot>
   					</table>
 
-  				<div id = "marketcap" style="padding:0px 10px; text-align : right;">
+  				<div id = "marketcap" style="padding:0px 10px; margin : 10px 10px 10px 0px; text-align : right;">
   						loading...
   				</div>
 			</div>
@@ -136,7 +135,7 @@
 			
 			
 			<div class="rank_section" id = "s1" style = "float : left;"> <!-- 시가총액 섹션 -->
-				<!-- <h2>시가총액 순위표</h2> -->
+				<h2>시가총액 순위표</h2>
 				<div class = "rankTableDiv" style="text-align : center;">
 				
 					<table width = 100%; onLoad="refreshTable()">

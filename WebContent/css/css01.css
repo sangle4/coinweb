@@ -13,6 +13,9 @@
 
 * {
 	margin : 10px;
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 table, th, td {
@@ -21,7 +24,6 @@ table, th, td {
 	border-spacing:0;
 	border-collapse:collapse;
 	border-bottom : 1px solid #BDBDBD;
-	font-family: Gulim, Tahoma, Arial, sans-serif;
 	font-weight : normal;
 	font-size : 13px;
 }
@@ -63,6 +65,18 @@ td {
 	float : left;
 }
 
+.mainNAV {
+	padding : 0px 0px 0px 0px;
+	border : 2px;
+	margin : 10px 220px 10px 220px;
+	width : 1000px;
+	height : 40px;
+	padding : 1px;
+	
+	color : white;
+	background-color : #EAEAEA;
+}
+
 .contents {
 	display : inline-block;
 	width : 1000px;
@@ -75,21 +89,22 @@ td {
 .contents_trade_table {
 	display : inline-block;
 	width : 700px;
-	height : 200px;
+	height : 185px;
 	border : 1px solid white;
 	float : left;
 	
 	font-family: Gulim, Tahoma, Arial, sans-serif;
 	font-weight : normal;
 	font-size : 13px;
+	margin : 10px 10px 0px 10px;
 }
 
 .login_tab {
 	display : inline-block;
 	width : 265px;
-	height : 200px;
+	height : 185px;
 	border : 1px solid #BDBDBD;
-	margin : 10px 10px 10px 0px;
+	margin : 10px 10px 0px 0px;
 }
 
 .rank_section {
@@ -97,10 +112,11 @@ td {
 	border : 1px solid white;
 	width : 770px;
 	float : left;
+	margin : 0px 10px 10px 10px;
 }
 
 .rankTableDiv {
-	margin : 10px 0px 10px 0px;
+	margin : 2px 0px 10px 0px;
 	border : 1px solid #BDBDBD;
 }
 
@@ -117,18 +133,11 @@ td {
 	padding : 1px;
 }
 
-#priceh1 {
-	color : gray;
-	font-size : 25px;
-	margin : 40px 0px 0px 0px;
-	padding : 0px 10px;
-	text-align : left;
-}
-
 h2 {
 	background-color : white;
 	color : gray;
 	padding : 1px;
+	margin : 0px 0px 0px 10px;
 }
 
 #menuTitle {
@@ -148,18 +157,6 @@ header {
 	margin : 10px 220px 10px 220px;
 	width : 100%;
 	color : white;
-}
-
-.mainNAV {
-	padding : 0px 0px 0px 0px;
-	border : 2px;
-	margin : 10px 220px 10px 220px;
-	width : 1000px;
-	height : 40px;
-	padding : 1px;
-	
-	color : white;
-	background-color : #EAEAEA;
 }
 
 nav {
