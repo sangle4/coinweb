@@ -5,7 +5,7 @@ function writeTotalCap(){ //총 시가총액을 가져오기 위한 함수
 		dataType:'json',
 		success: function(json){
 			var btcCap = parseFloat(json[0]['market_cap_usd']);
-			$('#marketcap').html("총 시가총액 : " + numberWithCommas(btcCap) + " USD");
+			$('#marketcap').html("Total marketcap : " + numberWithCommas(btcCap) + " USD");
 		},
 		error: function(){
 			alert("Total cap refreshing error!");

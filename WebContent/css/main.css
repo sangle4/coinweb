@@ -219,7 +219,8 @@ li {
 	margin : 0px 0px 0px 0px;
 	padding : 5px 0px 0px 0px;
 	color : #5D5D5D;
-	border-top : 1px solid #EAEAEA;
+	border-top : 1px solid #BEE0FF;
+	border-right : 1px solid #BEE0FF;
 	height : 20px;
 	text-align : center;
 }

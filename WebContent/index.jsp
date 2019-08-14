@@ -6,7 +6,8 @@
 		<meta charset="UTF-8">
 		<title>Coin Web</title>
 		<link rel="shortcut icon" type = "image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/css01.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/login.css">
 		<link rel="stylesheet" type="text/css" href="css/premiumCalcul.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap" rel="stylesheet">
@@ -128,13 +129,21 @@
     				</tfoot>
   					</table>
 
-  				<div id = "marketcap" style="padding:0px 10px; margin : 10px 10px 10px 0px; text-align : right;">
+  				<div id = "marketcap" style="font-family: 'Baloo Chettan', cursive; padding:0px; margin : 1px 10px 10px 0px; text-align : right; color : #1E60B5; font-size : 15px;">
   						loading...
   				</div>
 			</div>
 			
 			<div class = "login_tab">
-				
+			<!-- 
+				<div class = "userState">
+				</div>
+				<form class="loginForm" action="" method="get">
+					<input name="str" class = "IDform">
+					<input name="str" class = "PWform">
+					<input type="button" value="로그인" onclick="">
+				</form>
+				 -->
 			</div>
 			
 			
