@@ -5,11 +5,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Coin Web</title>
+		<link rel="shortcut icon" type = "image/x-icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/css01.css">
 		<link rel="stylesheet" type="text/css" href="css/premiumCalcul.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet"> 
 		<script src = "js/AccessAPI/binanceAPI.js"></script> <!-- 바이낸스 API js파일  -->
 		<script src = "js/AccessAPI/bithumbAPI.js"></script> <!-- 빗썸 API js파일  -->
 		<script src = "js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
@@ -21,7 +23,7 @@
 		<script src = "js/tradeCalcul.js"></script> <!-- 거래 계산식모음 스크립트파일 -->
 		<script src = "js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 		<script>
-		function hello(){
+		function hello() {
 			// form태그는 id로 찾지 않고 부여한 name으로 간단하게 검색가능
 			var ff = document.ff;	
 
@@ -33,8 +35,10 @@
 	</head>
 	<body>
 		<header>
-				<img width = "200" height = "45" float = left src="http://blogfiles.naver.net/MjAxODAyMjhfMTc4/MDAxNTE5NzQ0MDA0MjU2.UkoBQg_qlKF7JI1QTga9Ayt_9Dose1j2cI6nbh2Q1kYg.DHAS_0aVUt_GE2OTt2stp7rE31cofj4Xwe0YTSfuVrMg.JPEG.wapper12001/bitcoin-1-300x225.jpg">
-				<h1 id = "mainTitle"><a href = "http://localhost:8080/testweb/" id = "ad">코인웹</a></h1>
+				<h1>
+					<a href = "http://localhost:8080/testweb/" id = "mainTitle">
+					<img id = "mainImage" src="img/main.png">oinWeb</a>
+				</h1>
 		</header>
 		
 		<nav class = "mainNAV">
@@ -51,16 +55,16 @@
 		<div class = "contents">
 			<div class = "contents_trade_table" style="text-align : center;">
 					<ul>
-						<li class = "LiBTC" style = "border-left : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
+						<li class = "LiBTC" style = "border-left : 1px solid #BEE0FF;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BTC')">BTC</a></li>
 						<li class = "LiETH"><a href = "#1" class = "tradeLabel" onclick="fillTable('ETH')">ETH</a></li>
 						<li class = "LiLTC"><a href = "#1" class = "tradeLabel" onclick="fillTable('LTC')">LTC</a></li>
 						<li class = "LiXRP"><a href = "#1" class = "tradeLabel" onclick="fillTable('XRP')">XRP</a></li>
 						<li class = "LiADA"><a href = "#1" class = "tradeLabel" onclick="fillTable('ADA')">ADA</a></li>
-						<li class = "LiBCH" style = "border-right : 1px solid #EAEAEA;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
+						<li class = "LiBCH" style = "border-right : 1px solid #BEE0FF;"><a href = "#1" class = "tradeLabel" onclick="fillTable('BCH')">BCH</a></li>
 					</ul>
-					<table width = 100%; onLoad="refreshTable()" style = "border : 1px solid #BDBDBD;">
+					<table width = 100%; onLoad="refreshTable()" style = "border : 1px solid #BEE0FF;">
     				<thead>
-        				<tr id = "tradeTR" style = "background-color : #EAEAEA">
+        				<tr id = "tradeTR" style = "background-color : #E0EFFF">
             				<th>거래소</th>
             				<th>실시간 시세(KRW)</th>
             				<th>실시간 시세(USD)</th>
@@ -140,7 +144,7 @@
 				
 					<table width = 100%; onLoad="refreshTable()">
     					<thead id = "rankHead">
-        					<tr style = "background-color : #EAEAEA">
+        					<tr style = "background-color : #E0EFFF">
             					<th>　순위　</th>
             					<th>코인명</th>
             					<th>심볼</th>

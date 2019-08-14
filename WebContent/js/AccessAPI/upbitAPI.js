@@ -19,7 +19,7 @@ function writeTableUpbit(coin){
 		    
 		    var temp = "";
 		    if(data[0]['change'] == 'RISE'){
-		    	document.getElementById('upbit_fluctate').style.color = "#FF5E00";
+		    	document.getElementById('upbit_fluctate').style.color = "red";
 		    	temp += "▲  " + numberWithCommas(upbit_coin_fluctate) + " KRW";
 		    	temp += "　+" + fluctateRate + "%"
 		    	$('#upbit_fluctate').html(temp);

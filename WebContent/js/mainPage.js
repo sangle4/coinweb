@@ -43,7 +43,7 @@ function fillTable(coin){
 
 function changeLabelBC(){
 	if(tableCoin == "BTC"){
-		$(".LiBTC").css({"background" : "#EAEAEA"});
+		$(".LiBTC").css({"background" : "#E0EFFF"});
 		$(".LiETH").css({"background" : "white"});
 		$(".LiLTC").css({"background" : "white"});
 		$(".LiXRP").css({"background" : "white"});
@@ -52,7 +52,7 @@ function changeLabelBC(){
 	}
 	else if(tableCoin == "ETH"){
 		$(".LiBTC").css({"background" : "white"});
-		$(".LiETH").css({"background" : "#EAEAEA"});
+		$(".LiETH").css({"background" : "#E0EFFF"});
 		$(".LiLTC").css({"background" : "white"});
 		$(".LiXRP").css({"background" : "white"});
 		$(".LiADA").css({"background" : "white"});
@@ -61,7 +61,7 @@ function changeLabelBC(){
 	else if(tableCoin == "LTC"){
 		$(".LiBTC").css({"background" : "white"});
 		$(".LiETH").css({"background" : "white"});
-		$(".LiLTC").css({"background" : "#EAEAEA"});
+		$(".LiLTC").css({"background" : "#E0EFFF"});
 		$(".LiXRP").css({"background" : "white"});
 		$(".LiADA").css({"background" : "white"});
 		$(".LiBCH").css({"background" : "white"});
@@ -70,7 +70,7 @@ function changeLabelBC(){
 		$(".LiBTC").css({"background" : "white"});
 		$(".LiETH").css({"background" : "white"});
 		$(".LiLTC").css({"background" : "white"});
-		$(".LiXRP").css({"background" : "#EAEAEA"});
+		$(".LiXRP").css({"background" : "#E0EFFF"});
 		$(".LiADA").css({"background" : "white"});
 		$(".LiBCH").css({"background" : "white"});
 	}	
@@ -79,7 +79,7 @@ function changeLabelBC(){
 		$(".LiETH").css({"background" : "white"});
 		$(".LiLTC").css({"background" : "white"});
 		$(".LiXRP").css({"background" : "white"});
-		$(".LiADA").css({"background" : "#EAEAEA"});
+		$(".LiADA").css({"background" : "#E0EFFF"});
 		$(".LiBCH").css({"background" : "white"});
 	}	
 	else {
@@ -88,7 +88,7 @@ function changeLabelBC(){
 		$(".LiLTC").css({"background" : "white"});
 		$(".LiXRP").css({"background" : "white"});
 		$(".LiADA").css({"background" : "white"});
-		$(".LiBCH").css({"background" : "#EAEAEA"});
+		$(".LiBCH").css({"background" : "#E0EFFF"});
 	}
 }
 
@@ -98,7 +98,7 @@ $.ajax({
 	});
 
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
-	$(".LiBTC").css({"background" : "#EAEAEA"});
+	$(".LiBTC").css({"background" : "#E0EFFF"});
 	fillTable('BTC');
 	setInterval("fillTable(tableCoin)", 10000); //10초후 재시작
 	getUSDrate();
