@@ -41,16 +41,16 @@
 				</h1>
 		</header>
 		
-		<nav class = "mainNAV">
+		<ul class = "mainNAV">
 			<!-- <i class="material-icons">cloud</i> -->
-			<a href="#s0" class = "menuLabel"><i class="material-icons">home</i></a>&nbsp;&nbsp;
-			<a href="#s1" class = "menuLabel">[menu]</a>&nbsp;&nbsp;
-			<a href="#s2" class = "menuLabel">[nav]</a>&nbsp;&nbsp;
-			<a href="#s3" class = "menuLabel">[section]</a>&nbsp;&nbsp;
-			<a href="#s4" class = "menuLabel">[article]</a>&nbsp;&nbsp;
-			<a href="#s5" class = "menuLabel">[aside]</a>&nbsp;&nbsp;
-			<a href="#s6" class = "menuLabel">[footer]</a>&nbsp;&nbsp;
-		</nav>
+			<li class = "menuLabel"><a href="#s0"><i class="material-icons" id = "menuHome">home</i></a></li>
+			<li class = "menuLabel"><a href="#s1" class="menuA">menu</a></li>
+			<li class = "menuLabel"><a href="#s2" class="menuA">nav</a></li>
+			<li class = "menuLabel"><a href="#s3" class="menuA">section</a></li>
+			<li class = "menuLabel"><a href="#s4" class="menuA">article</a></li>
+			<li class = "menuLabel"><a href="#s5" class="menuA">aside</a></li>
+			<li class = "menuLabel"><a href="#s6" class="menuA">footer</a></li>
+		</ul>
 		
 		<div class = "contents">
 			<div class = "contents_trade_table" style="text-align : center;">
@@ -139,9 +139,8 @@
 			
 			
 			<div class="rank_section" id = "s1" style = "float : left;"> <!-- 시가총액 섹션 -->
-				<h2>시가총액 순위표</h2>
+				<h2 class = "rankTitle">Cryptocurrency Rank</h2>
 				<div class = "rankTableDiv" style="text-align : center;">
-				
 					<table width = 100%; onLoad="refreshTable()">
     					<thead id = "rankHead">
         					<tr style = "background-color : #E0EFFF">

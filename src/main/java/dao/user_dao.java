@@ -29,7 +29,7 @@ public class user_dao {
             con = DriverManager.getConnection(server + "/" + database + "?useSSL=false", Suser_name, Spassword);
             stmt = con.createStatement();
             rs = stmt.executeQuery("SELECT * FROM USER");
-            System.out.println("정상적으로 연결되었습니다.");
+            System.out.println("Connect completed.");
             
             while(rs.next()){
             	int num = rs.getInt("num");

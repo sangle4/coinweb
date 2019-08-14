@@ -71,16 +71,48 @@ td {
 	margin : 10px 10px 10px 0px;
 }
 
+.rankTitle {
+	font-family: 'Baloo Chettan', cursive;
+	color : #1E60B5;
+	margin : 0px 0px 0px 10px;
+	font-size : 30px;
+}
+
 .mainNAV {
-	padding : 0px 0px 0px 0px;
+	padding : 0px;
 	border : 2px;
 	margin : 10px 220px 10px 220px;
 	width : 1000px;
-	height : 40px;
-	padding : 1px;
-	
+	height : 36px;
 	color : white;
 	background-color : #1E60B5;
+}
+
+.menuLabel {
+	margin : 0px 15px;
+	padding : 5px;
+	height : 26px;
+	border : none;
+}
+
+.menuA {
+	margin : 0px;
+	padding : 0px;
+	height : 26px;
+	color : white;
+	font-family: 'Baloo Chettan', cursive;
+	display : inline;
+	font-size : 20px;
+}
+
+#menuHome {
+	margin : 3px 0px 0px 0px;
+	color : white;
+}
+
+a.menuA:hover {
+	color : #BDBDBD;
+	display : inline-block;
 }
 
 .contents {
@@ -139,12 +171,6 @@ td {
 	padding : 1px;
 }
 
-h2 {
-	background-color : white;
-	color : gray;
-	padding : 1px;
-	margin : 0px 0px 0px 10px;
-}
 
 #menuTitle {
 	background-color : gray;
@@ -221,15 +247,5 @@ a {
 
 a.tradeLabel:hover {
 	color : gray;
-	display : inline-block;
-}
-
-.menuLabel {
-	margin : -10px 10px -10px 10px;
-	color : white;
-}
-
-a.menuLabel:hover {
-	color : black;
 	display : inline-block;
 }
