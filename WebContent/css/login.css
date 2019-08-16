@@ -1,24 +1,88 @@
 @charset "EUC-KR";
 
 .userState {
+	margin : 0px 0px 12px 0px;
+	padding : 5px 5px 0px 5px;
+	width : 255px;
+	height : 22px;
+	text-align : center;
+	font-size : 13px;
+	border-bottom : 1px solid #BEE0FF;
+	color : white;
+	background-color : #1E60B5;
+}
+
+.IDPWfont {
+	font-family: 'Baloo Chettan', cursive;
+	color : #1E60B5;
 	margin : 0px;
-	padding : 0px;
-	width : 265px;
-	height : 30px;
+	width : 25px;
+	float : left;
+	font-size : 18px;
 }
 
 .loginForm {
 	margin : 0px 10px 0px 10px;
 }
 
-.IDform {
-	width : 100px;
+.IDPWform {
+	width : 200px;
 	height : 20px;
-	margin : 0px;
+	margin : 0px 0px 10px 10px;
+	border : 1px solid #1E60B5;
+	border-radius : 6px;
 }
 
-.PWform {
-	width : 100px;
-	height : 20px;
+.btbox {
 	margin : 0px;
+	display : inline-block;
+	width : 246px;
+	height : 25px;
+}
+
+.loginIns {
+	display : inline-block;
+	margin : 3px 0px 0px 0px;
+	width : 120px;
+	height : 16px;
+	float : left;
+	vertical-align : top;
+}
+
+.idLabel {
+	margin : 0px;
+	padding : 0px;
+	font-size : 11px;
+	vertical-align : top;
+	color : #1E60B5;
+}
+
+.logincb {
+	margin : 0px;
+	padding : 0px;
+	vertical-align : top;
+}
+
+.loginbt {
+	width : 70px;
+	height : 22px;
+	margin : 0px 8px 5px 5px;
+	border : 1px solid #1E60B5;
+	border-radius : 6px;
+	background-color : white;
+	color : #1E60B5;
+	float : right;
+}
+
+.option_box {
+	margin : 0px;
+	border-top : 1px solid #BEE0FF;
+}
+
+.login_option {
+	border : none;
+	margin : 5px 17px;
+	font-size : 10px;
+	color : #1E60B5;
+	background-color : #F2F8FF;
 }
