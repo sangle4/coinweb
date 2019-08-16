@@ -61,3 +61,34 @@ function calculPremium(kor, name, coin){ //한국 프리미엄 계산 함수 - k
 		$(changeName).html(" - ");
 	}
 }
+
+function priceSimply(price) {
+	price = USDtoKRW(price);
+	var simplePrice = "";
+	var count = 0;
+	
+	for(var i = 0; i<price.length; i++){
+		if(price[i] == ',')
+			count++;
+	}
+	if(count > 0){
+		for(var i = 0; i<price.length; i++){
+			if(price[i] == ','){
+				if(count == 4)
+					simplePrice += '조';
+				else if(count == 3){
+					simplePrice += '0억';
+				}
+				else if(count == 2)
+					simplePrice += '만원';
+				break;
+			}
+			simplePrice += price[i];
+		}
+	}
+	
+	return simplePrice;
+}
+
+
+

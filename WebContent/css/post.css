@@ -1,0 +1,23 @@
+@charset "EUC-KR";
+
+div {
+	border : 1px solid black;
+	width : 110px;
+	margin : 10px;
+	background-color : white;
+}
+
+#test1_id {
+	background-color : gray;
+}
+#test2_id {
+	background-color : gray;
+}
+.test1_class {
+	background-color : skyblue;
+}
+.test2_class {
+	background-color : skyblue;
+}
+
+

@@ -1,24 +1,20 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
-<%@ page import="dao.user_dao" %>
-<%@ page import="dao.user_dto" %>
-<%@ page import="java.util.ArrayList" %>
+<!DOCTYPE html>
 <html>
 	<head>
+	<link rel="stylesheet" type="text/css" href="css/post.css">
 	<meta charset="UTF-8">
-    <title>DB test-page</title>
+    <title>test page</title>
 	</head>
 	<body>
-		<%
-			user_dao userdao = new user_dao();
-			ArrayList<user_dto> dtos = userdao.User_Select();
-		
-			for(int i=0; i <dtos.size(); i++){
-				user_dto dto = dtos.get(i);
-				out.println(dto.getID());
-				out.println(dto.getName());
-				out.println(dto.getPassword());
-				out.println(dto.getEmail());
-			}
-		%>
+		<div id = "test1_id" class = "test1_class">
+			test message1
+		</div>
+		<div id = "test2_id" class = "test2_class">
+			test message2
+		</div>
 	</body>
 </html>
+
+
+

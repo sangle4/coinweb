@@ -57,10 +57,11 @@
 	color : #1E60B5;
 }
 
-.logincb {
+#logincb {
 	margin : 0px;
 	padding : 0px;
 	vertical-align : top;
+	border : 1px solid red;
 }
 
 .loginbt {

@@ -78,24 +78,27 @@ function getRankfromMarketcap(){
 	
 		for(var i = 0; i<20; i++){
 			if(data[i]['max_supply'] == null){
-				totalSupply = 'unlimited';
+				totalSupply = '-';
 				volPercent = '-';
 			}
 			else {
 				totalSupply = data[i]['max_supply'];
 				volPercent = (data[i]['total_supply']*100/totalSupply).toFixed(2) + "%";
 			}
-			if(totalSupply != 'unlimited')
-				totlalSupply = (totalSupply*1).toFixed(0);
+			if(totalSupply != '-')
+				totalSupply = (totalSupply*1).toFixed(0);
+			
+			var totalCap = priceSimply((data[i]['market_cap_usd']*1).toFixed(0));
+			var totalVol = priceSimply((data[i]['24h_volume_usd']*1).toFixed(0));
 			
 			inner += '<tr id = "rankTR">';
 			inner += '<td id = "rankTD">' + (i+1) + '</td>' + //rank
 									'<td>' + data[i]['name'] + '</td>' + //코인 명
 									'<td>' + data[i]['symbol'] + '</td>' + //코인 심볼명
-									'<td>' + (data[i]['market_cap_usd']*1).toFixed(0) + '</td>' + //시가 총액
+									'<td>' + totalCap + '</td>' + //시가 총액
 									'<td>' + (data[i]['price_usd']*1).toFixed(2) + '</td>' + //거래가격
 									'<td>' + data[i]['percent_change_24h'] + "%" + '</td>'+ //1일 변화량
-									'<td>' + (data[i]['24h_volume_usd']*1).toFixed(0) + '</td>'+ //1일 거래량
+									'<td>' + totalVol + '</td>'+ //1일 거래량
 									'<td>' + totalSupply + '</td>'+ //총 발행량
 									'<td>' + (data[i]['total_supply']*1).toFixed(0) + '</td>' + //공급량
 									'<td>' + volPercent + '</td>'; //발행량 대비 공급량 퍼센티지

@@ -176,8 +176,8 @@
 				<input type="password" name="userpw" class="IDPWform">
 				<div class = "btbox">
 					<div class="loginIns">
-						<input type="checkbox" name="keep_id" class="logincb" title="체크시 로그인한 아이디를 기억합니다.">
-						<label class = "idLabel" for="keep_id">아이디유지</label>
+						<input type="checkbox" name="keep_id" id="logincb" title="체크시 로그인한 아이디를 기억합니다.">
+						<label class = "idLabel" for="logincb">아이디유지</label>
 					</div>
 					<input type="button" value="로그인" class="loginbt" onclick="">
 				</div>
@@ -285,6 +285,7 @@
 	<!--
 		<a href="https://eclass.dongguk.edu/index.jsp"><img src="https://eclass.dongguk.edu/lmsdata/img/template1/logo.png"></a>
 		-->
+		
 	<footer>
 		<div class = "footer_copy">
 			e-mail: sangle4@naver.com<br>
