@@ -44,7 +44,7 @@ td {
 }
 
 #rankTD {
-	height : 40px;
+	height : 35px;
 }
 
 #box1 {
@@ -157,6 +157,18 @@ a.menuA:hover {
 .rankTableDiv {
 	margin : 2px 0px 10px 0px;
 	border : 1px solid #BEE0FF;
+}
+
+.rankName {
+	margin : 0px;
+	text-align : left;
+	vertical-align : middle;
+}
+
+.rankPic {
+	margin : 5px 0px 0px 0px;
+	width : 20px;
+	height : 20px;
 }
 
 .aside_tab {

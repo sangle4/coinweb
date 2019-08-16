@@ -90,10 +90,12 @@ function getRankfromMarketcap(){
 			
 			var totalCap = priceSimply((data[i]['market_cap_usd']*1).toFixed(0));
 			var totalVol = priceSimply((data[i]['24h_volume_usd']*1).toFixed(0));
+			var imgURL = "img/coinmark/" + data[i]['symbol'] + ".png";
 			
 			inner += '<tr id = "rankTR">';
-			inner += '<td id = "rankTD">' + (i+1) + '</td>' + //rank
-									'<td>' + data[i]['name'] + '</td>' + //코인 명
+			inner += '<td id = "rankTD">' + '<strong>' +(i+1)+ '</strong>' + '</td>' + //rank
+									'<td>' + '<img class = "rankPic" src = "' + imgURL + '"> </td>' + //코인 사진
+									'<td class="rankName">' + "　" + data[i]['name'] + '<br></td>' + //코인 명
 									'<td>' + data[i]['symbol'] + '</td>' + //코인 심볼명
 									'<td>' + totalCap + '</td>' + //시가 총액
 									'<td>' + (data[i]['price_usd']*1).toFixed(2) + '</td>' + //거래가격

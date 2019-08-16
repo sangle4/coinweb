@@ -198,6 +198,7 @@
 					<thead id="rankHead">
 						<tr style="background-color: #E0EFFF">
 							<th>순위</th>
+							<th></th>
 							<th>코인명</th>
 							<th>심볼</th>
 							<th>시가 총액</th>
