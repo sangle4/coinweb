@@ -51,26 +51,8 @@
 </script>
 </head>
 <body>
-	<header>
-		<h1>
-			<a href="http://localhost:8080/testweb/" id="mainTitle"> <img
-				id="mainImage" src="img/main.png">oinWeb
-			</a>
-		</h1>
-	</header>
-
-	<ul class="mainNAV">
-		<!-- <i class="material-icons">cloud</i> -->
-		<li class="menuLabel"><a href="#s0"><i class="material-icons"
-				id="menuHome">home</i></a></li>
-		<li class="menuLabel"><a href="#s1" class="menuA">menu</a></li>
-		<li class="menuLabel"><a href="/free_board" class="menuA">board</a></li>
-		<li class="menuLabel"><a href="#s3" class="menuA">forum</a></li>
-		<li class="menuLabel"><a href="#s4" class="menuA">article</a></li>
-		<li class="menuLabel"><a href="#s5" class="menuA">chart</a></li>
-		<li class="menuLabel"><a href="#s6" class="menuA">calculator</a></li>
-	</ul>
-
+	<jsp:include page="views/module/top.jsp"></jsp:include> <!-- top부분을 불러옴 -->
+	
 	<div class="contents">
 		<div class="contents_trade_table" style="text-align: center;">
 			<ul>
@@ -223,82 +205,8 @@
 
 	</div>
 
-
-
-	<!-- 
-		<section id = "premium_section" style = "float : left;">
-		
-			<h2>환차 이익 계산기<a href = "#1" id = "premium_trade" onclick="fillTable('BTC')"><i class="material-icons">keyboard_arrow_down</i></a></h2>
-			<form name = "myform">
-			<div class = "box1">
-				<p class = "pc1">
-					<input type = "text" name = "txt1" id = "txt1" placeholder = "number1" size = "5">
-				</p>
-				<p class = "pc2">
-					<input type = "radio" name = "r_op" id = "r_op1" value = "+"><br>
-					<input type = "radio" name = "r_op" id = "r_op2" value = "-"><br>
-					<input type = "radio" name = "r_op" id = "r_op3" value = "*"><br>
-					<input type = "radio" name = "r_op" id = "r_op4" value = "/"><br>
-				</p>
-				<p class = "pc2">
-					<label for = "r_op1"> + </label><br>
-					<label for = "r_op2"> - </label><br>
-					<label for = "r_op3"> * </label><br>
-					<label for = "r_op4"> / </label><br>
-				</p>
-				<p class = "pc1">
-					<input type = "text" name = "txt2" id = "txt2" placeholder = "number2" size = "5">
-				</p>
-				<p class = "pc1">
-					<input type = "button" value = "=" onclick = "calShow();">
-					<input type = "button" value = "Cancel" onclick = "cancelData();">
-				</p>
-				<p class = "pc3">
-					<input type = "checkbox" name = "ck_eval" id = "ck_eval">
-					<label for = "ck_eval">including fx</label>
-				</p>
-			</div>
-			</form>
-			<div class = "box3">
-				<div id = "msg"></div>
-			</div>
-		</section>
-		
-		<form name="ff" action="testPage.jsp" method="get">
-			<input name="str">
-			<input type="button" value="DB test button" onclick="hello()">
-		</form>
-		
-		<section id = "box1">
-			<h2>aside</h2>
-			본문에서 약간 벗어난 노트나 팁
-			신문, 잡지에서 주요 기사 옆 관련기사, 삽입 어구로 표시된 논평등
-			페이지의 오른쪽이나 왼쪽에 주로 배치
-		</section>
-		<section id = "box1">
-			<h2>footer</h2>
-			꼬리말 영역, 주로 저자나 저작권 정보
-			<div id = "hyperLink">
-			<a href="http://eclass.dongguk.edu">동국대학교 eclass 사이트</a>
-			</div>
-		</section>
-		-->
-
-	<!--
-		<a href="https://eclass.dongguk.edu/index.jsp"><img src="https://eclass.dongguk.edu/lmsdata/img/template1/logo.png"></a>
-		
-		<form name="ff" action="testInclude.jsp" method="get">
-			<input name="str">
-			<input type="button" value="DB test button" onclick="hello()">
-		</form>
-		
-		-->
-		
-	<footer>
-		<div class = "footer_copy">
-			e-mail: sangle4@naver.com<br>
-			Copyright&copy; CoinWeb All Rights Reserved.
-		</div>
-	</footer>
+	
+	<jsp:include page="views/module/output_test.jsp"></jsp:include>
+	<jsp:include page="views/module/footer.jsp"></jsp:include> <!-- footer부분을 불러옴 -->
 </body>
 </html>

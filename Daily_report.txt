@@ -1,0 +1,100 @@
+Project started at Jul 25, 2019
+written by Kangil Kim, https://github.com/sangle4
+------------------------------------------------------------
+Jul 26, 2019
+Made main page design and css
+///////////////////////////////////////////////////////////////
+Jul 27, 2019
+Fixed and added main page, added bithumb api
+CONVERTED DYNAMIC WEB PROJECT TO MAVEN PROJECT
+///////////////////////////////////////////////////////////////
+Jul 28, 2019
+added trade table, fixed design
+///////////////////////////////////////////////////////////////
+Jul 30, 2019
+Changed structure of script file, main page changed
+Added coinone api
+///////////////////////////////////////////////////////////////
+Jul 31, 2019
+Added coinmarketcap and korbit api, file directory changed.
+*Can't use korbit api because of CORS. Need to find a way to use this. 
+///////////////////////////////////////////////////////////////
+Aug 1, 2019
+Added animation, simplify code and added table timer, 
+connected to binance api with node.js, but it's not working at web 
+*Can't use binance api because of CORS, fail to fix get rate function
+///////////////////////////////////////////////////////////////
+Aug 2, 2019
+Added upbit api and trade table function fixed
+///////////////////////////////////////////////////////////////
+Aug 3, 2019
+Wrote README.txt to understand this project
+*net::ERR_NETWORK_IO_SUSPENDED error occured. 
+///////////////////////////////////////////////////////////////
+Aug 4, 2019
+changed showing in table, data structure changed
+///////////////////////////////////////////////////////////////
+Aug 5, 2019
+net::ERR_NETWORK_IO_SUSPENDED error resolved.
+Added Korean permium rate table.
+///////////////////////////////////////////////////////////////
+Aug 6, 2019
+made function that calculate korean trade market premium
+made label on table to show both btc and another coins, need to make
+and change function to show another coins.
+///////////////////////////////////////////////////////////////
+Aug 8, 2019
+fixed poloniex, coinmarketcap table function to show another coin
+all API javascript added try-catch to fix the NO FOUND ERROR
+Premium trade calculation function outline made.
+Connected with mariaDB, made HomeController.java
+///////////////////////////////////////////////////////////////
+Aug 10, 2019
+Added mybatis dependency in xml and made DB test page to access
+mariaDB.
+Made Dao and Dto to access DB
+Made new db to access and user table
+file directory changed
+///////////////////////////////////////////////////////////////
+Aug 11, 2019
+Fixed main css, table style changed
+Top 20 rank table made, need to add coin picture in rank
+///////////////////////////////////////////////////////////////
+Aug 12, 2019
+upgrade main css, tradebox css function added
+new index added in rank table
+///////////////////////////////////////////////////////////////
+Aug 13, 2019
+fixed main page css, margin increased
+login tab and aside tad added
+///////////////////////////////////////////////////////////////
+Aug 14, 2019
+site design color changed gray to blue
+added favicon and main title pic
+///////////////////////////////////////////////////////////////
+Aug 15, 2019
+making login tab, form made
+structure complete(now) -> db connect -> change css 
+///////////////////////////////////////////////////////////////
+Aug 16, 2019
+login tab ui completed, footer added
+///////////////////////////////////////////////////////////////
+Aug 17, 2019
+add coin symbol picture to rank table, size fixed
+price unit fixed to rank table
+seperate main page to top, main, footer 3 parts to modulation my project
+Now can make new page easier.
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+
+***NEED TO FIX***
+1. Can't use korbit api because of CORS. Need to find a way to use this.
+2. Can't use binance api because of CORS, fail to fix get rate function -> Can't find....fXXX
+3. Need to make another branch to manage this project
+4. Api functions simplify
+5. need to add coin picture in rank
+
+***BUG FIXED***
+1. net::ERR_NETWORK_IO_SUSPENDED error occured.
