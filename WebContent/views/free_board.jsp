@@ -286,12 +286,6 @@
 
 	<!--
 		<a href="https://eclass.dongguk.edu/index.jsp"><img src="https://eclass.dongguk.edu/lmsdata/img/template1/logo.png"></a>
-		
-		<form name="ff" action="testInclude.jsp" method="get">
-			<input name="str">
-			<input type="button" value="DB test button" onclick="hello()">
-		</form>
-		
 		-->
 		
 	<footer>
@@ -299,6 +293,10 @@
 			e-mail: sangle4@naver.com<br>
 			Copyright&copy; CoinWeb All Rights Reserved.
 		</div>
+		<form name="ff" action="testPage.jsp" method="get">
+			<input name="str">dd
+			<input type="button" value="DB test button" onclick="hello()">
+		</form>
 	</footer>
 </body>
 </html>
