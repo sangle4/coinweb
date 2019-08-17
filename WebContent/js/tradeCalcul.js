@@ -1,12 +1,11 @@
 function USDtoKRW(convert){
-	var rate = 1215;
-	
-	return numberWithCommas((convert*rate).toFixed(0));
+	//var rate = 1215;
+	return numberWithCommas((convert*usdRate).toFixed(0));
 }
 
 function KRWtoUSD(convert){
-	var rate = 1215;
-	var dt = convert/rate;
+	//var rate = 1215;
+	var dt = convert/usdRate;
 	if(dt >= 10000){ //1200만원 이상
 		return dt.toFixed(0);
 	}
@@ -36,12 +35,12 @@ function fixFloat(convert){ //해외거래소 내의 코인의 USD가격 소숫�
 }
 
 function calculPremium(kor, name, coin){ //한국 프리미엄 계산 함수 - kor은 원화가격, name은 해당 거래소 이름, coin은 코인명
-	var rate = 1215;
+	//var rate = 1215;
 	var url = 'https://crix-api-endpoint.upbit.com/v1/crix/candles/days/?code=CRIX.UPBIT.';
 	url += "USDT-" + coin;
 	if(coin != "null"){
 		$.get(url, function(data) {
-		    var usd = parseFloat(data[0]['tradePrice']) * rate; //실시간 시세
+		    var usd = parseFloat(data[0]['tradePrice']) * usdRate; //실시간 시세
 			var premium; //프리미엄 퍼센테이지 저장 변수
 			
 			if(kor > usd){

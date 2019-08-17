@@ -84,6 +84,7 @@ add coin symbol picture to rank table, size fixed
 price unit fixed to rank table
 seperate main page to top, main, footer 3 parts to modulation my project
 Now can make new page easier.
+added usd exchange rate, by Hana bank in Korea
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 

@@ -140,10 +140,15 @@
 					</tr>
 				</tfoot>
 			</table>
-
-			<div id="marketcap"
-				style="font-family: 'Baloo Chettan', cursive; padding: 0px; margin: 1px 10px 10px 0px; text-align: right; color: #1E60B5; font-size: 15px;">
+			<div style = "margin : 0px 0px 10px 0px; width : 700px; height : 25px;">
+				<div id="usd_rate"
+				style="width : 250px; font-family: 'Baloo Chettan', cursive; padding: 0px; margin: 1px 10px 10px 0px; text-align: left; color: #1E60B5; font-size: 15px; float : left;">
 				loading...</div>
+				<div id="marketcap"
+				style="width : 400px; font-family: 'Baloo Chettan', cursive; padding: 0px; margin: 1px 10px 10px 0px; text-align: right; color: #1E60B5; font-size: 15px; float : right;">
+				loading...</div>
+			</div>
+			
 		</div>
 
 		<div class="login_tab">
