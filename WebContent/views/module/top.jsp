@@ -19,7 +19,7 @@
 		<!-- <i class="material-icons">cloud</i> -->
 		<li class="menuLabel"><a href="#"><i class="material-icons" id="menuHome">home</i></a></li>
 		<li class="menuLabel" id = "menu"><a href="#" class="menuA">menu</a></li>
-		<li class="menuLabel"><a href="/free_board" class="menuA">board</a></li>
+		<li class="menuLabel"><a href="views/free_board.jsp" class="menuA">board</a></li>
 		<li class="menuLabel"><a href="#" class="menuA">forum</a></li>
 		<li class="menuLabel"><a href="#" class="menuA">article</a></li>
 		<li class="menuLabel"><a href="#" class="menuA">chart</a></li>

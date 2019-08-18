@@ -5,20 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Coin Web</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/login.css">
-<link rel="stylesheet" type="text/css" href="css/premiumCalcul.css">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link
-	href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap"
-	rel="stylesheet">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link
-	href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap"
-	rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/premiumCalcul.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
 <script src="js/AccessAPI/binanceAPI.js"></script><!-- 바이낸스 API js파일  -->
 <script src="js/AccessAPI/bithumbAPI.js"></script><!-- 빗썸 API js파일  -->
 <script src="js/AccessAPI/upbitAPI.js"></script><!-- 업비트 API js파일  -->
