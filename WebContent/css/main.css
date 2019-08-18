@@ -89,8 +89,7 @@ td {
 }
 
 .menuLabel {
-	margin : 0px 15px;
-	padding : 5px;
+	margin : 0px 20px;
 	height : 26px;
 	border : none;
 }
@@ -174,9 +173,31 @@ a.menuA:hover {
 .aside_tab {
 	display : inline-block;
 	width : 195px;
-	height : 800px;
+	height : 748px;
 	border : 1px solid #BEE0FF;
-	margin : 10px 10px 10px 0px;
+	margin : 68px 10px 10px 0px;
+}
+
+.tab_Sites {
+	margin : 0px;
+	color : white;
+	background-color : #1E60B5; 
+	height : 25px;
+	font-family: 'Baloo Chettan', cursive;
+	text-align : center;
+}
+
+.sites_list_seperate {
+	margin : 2px 10px; 
+	text-align : left; 
+	border-bottom : 1px solid #BEE0FF;
+}
+
+.site_url {
+	color : gray;
+	font-size : 12px;
+	display : block;
+	margin : 4px;
 }
 
 #h1 {
