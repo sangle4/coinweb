@@ -17,6 +17,15 @@ function KRWtoUSD(convert){
 	}
 }
 
+function strToNum(s){
+	var temp = "";
+	for(var i = 0; i<s.length; i++){
+		if(s[i] != ',')
+			temp += s[i];
+	}
+	return temp;
+}
+
 function errorThrow(name, coin){ //해당 코인을 찾지 못했을 때 출력하는 에러 함수
 	//console.log(coin + " is not in this " + name + " cyptocurrency market.");
 }

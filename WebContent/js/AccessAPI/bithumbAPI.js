@@ -3,8 +3,8 @@ function writeTableBithumb(coin){
 		
 		try{
 			var bithumb_coin = parseFloat(data['data'][coin]['closing_price']); //종가 시세
-			var bithumb_coin_fluctate = parseFloat(data['data'][coin]['24H_fluctate']); //변동률
-			var bithumb_coin_trade = parseFloat(data['data'][coin]['volume_1day']); //당일 거래량
+			var bithumb_coin_fluctate = parseFloat(strToNum(data['data'][coin]['fluctate_24H'])); //변동률
+			var bithumb_coin_trade = parseFloat(data['data'][coin]['units_traded_24H']); //당일 거래량
 			
 			var fluctateRate = ((bithumb_coin_fluctate/bithumb_coin)*100).toFixed(2); //변동율 KRW을 %로 변환
 			
@@ -19,7 +19,7 @@ function writeTableBithumb(coin){
 		    if(bithumb_coin_fluctate > 0){ //변동률이 증가냐 감소에 따라 색변경
 		    	document.getElementById('bithumb_fluctate').style.color = "red";
 		    	temp += "▲  " + numberWithCommas(bithumb_coin_fluctate) + " KRW";
-		    	temp += "　+" + fluctateRate + "%"
+		    	temp += "　+" + fluctateRate + "%";
 		    	$('#bithumb_fluctate').html(temp);
 		    }
 		    else{

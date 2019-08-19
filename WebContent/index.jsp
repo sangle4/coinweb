@@ -166,7 +166,7 @@
 						<input type="checkbox" name="keep_id" id="logincb" title="체크시 로그인한 아이디를 기억합니다.">
 						<label class = "idLabel" for="logincb">아이디유지</label>
 					</div>
-					<input type="button" value="로그인" class="loginbt" onclick="">
+					<input type="button" value="로그인" class="loginbt" onclick="eventFunc()">
 				</div>
 				<div class = "option_box">
 					<input type = "button" value = "회원가입" class = "login_option" onclick = "">
