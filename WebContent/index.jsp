@@ -1,5 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
+<%@ page import="dao.user_dao" %>
+<%@ page import="dao.user_dto" %>
+<%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,6 +34,31 @@
 		// form태그 안의 값들은 따로 값을 검색하지 않아도 넘어간다
 		// submit() : action에 지정된 주소로 파라미터와 함께 전송하겠다는 의미
 		ff.submit();
+	}
+	function loginBT() {
+		if(document.getElementById("idField").value == "") {
+			alert("아이디를 입력해주세요.");
+			document.getElementById("idField").focus();
+		}
+		else if(document.getElementById("pwField").value == ""){
+			alert("비밀번호를 입력해주세요.");
+			document.getElementById("pwField").focus();
+		}
+		
+		<%
+		user_dao userdao = new user_dao();
+        ArrayList<user_dto> dtos = userdao.User_Select();
+        
+        for(int i=0; i <dtos.size(); i++){
+            user_dto dto = dtos.get(i);
+            
+            //out.println(dto.getID());
+            //out.println(dto.getName());
+            //out.println(dto.getPassword());
+            //out.println(dto.getEmail());
+         }
+        %>
+        console.log(dto.getID());
 	}
 </script>
 </head>
@@ -141,7 +168,7 @@
 			<div class="userState">
 				<strong>로그인 후 이용해 주세요.</strong>
 			</div>
-			<form class="loginForm" action="" method="get">
+			<form class="loginForm" action="" method="post" >
 				<div class="IDPWfont">ID</div>
 				<input name="userid" class="IDPWform" id = "idField">
 				<div class="IDPWfont">PW</div>
