@@ -9,36 +9,21 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 <link rel="stylesheet" type="text/css" href="css/premiumCalcul.css">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link
-	href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap"
-	rel="stylesheet">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link
-	href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap"
-	rel="stylesheet">
-<script src="js/AccessAPI/binanceAPI.js"></script>
-<!-- 바이낸스 API js파일  -->
-<script src="js/AccessAPI/bithumbAPI.js"></script>
-<!-- 빗썸 API js파일  -->
-<script src="js/AccessAPI/upbitAPI.js"></script>
-<!-- 업비트 API js파일  -->
-<script src="js/AccessAPI/coinmarketcapAPI.js"></script>
-<!-- 마켓캡 API js파일  -->
-<script src="js/AccessAPI/coinoneAPI.js"></script>
-<!-- 코인원 API js파일  -->
-<script src="js/AccessAPI/korbitAPI.js"></script>
-<!-- 코빗 API js파일  -->
-<script src="js/AccessAPI/poloniexAPI.js"></script>
-<!-- 폴로닉스 API js파일  -->
-<script src="js/AccessAPI/upbitAPI.js"></script>
-<!-- 업비트 API js파일  -->
-<script src="js/tradeCalcul.js"></script>
-<!-- 거래 계산식모음 스크립트파일 -->
-<script src="js/mainPage.js"></script>
-<!-- 페이지 초기세팅 js파일  -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
+<script src="js/AccessAPI/binanceAPI.js"></script> <!-- 바이낸스 API js파일  -->
+<script src="js/AccessAPI/bithumbAPI.js"></script> <!-- 빗썸 API js파일  -->
+<script src="js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
+<script src="js/AccessAPI/coinmarketcapAPI.js"></script> <!-- 마켓캡 API js파일  -->
+<script src="js/AccessAPI/coinoneAPI.js"></script> <!-- 코인원 API js파일  -->
+<script src="js/AccessAPI/korbitAPI.js"></script> <!-- 코빗 API js파일  -->
+<script src="js/AccessAPI/poloniexAPI.js"></script> <!-- 폴로닉스 API js파일  -->
+<script src="js/AccessAPI/upbitAPI.js"></script> <!-- 업비트 API js파일  -->
+<script src="js/tradeCalcul.js"></script> <!-- 거래 계산식모음 스크립트파일 -->
+<script src="js/userLogin.js"></script> <!-- 유저 로그인관련 js파일 -->
+<script src="js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 <script>
 	function hello() {
 		// form태그는 id로 찾지 않고 부여한 name으로 간단하게 검색가능
@@ -158,15 +143,15 @@
 			</div>
 			<form class="loginForm" action="" method="get">
 				<div class="IDPWfont">ID</div>
-				<input name="userid" class="IDPWform">
+				<input name="userid" class="IDPWform" id = "idField">
 				<div class="IDPWfont">PW</div>
-				<input type="password" name="userpw" class="IDPWform">
+				<input type="password" name="userpw" class="IDPWform" id = "pwField">
 				<div class = "btbox">
 					<div class="loginIns">
 						<input type="checkbox" name="keep_id" id="logincb" title="체크시 로그인한 아이디를 기억합니다.">
 						<label class = "idLabel" for="logincb">아이디유지</label>
 					</div>
-					<input type="button" value="로그인" class="loginbt" onclick="eventFunc()">
+					<input type="button" value="로그인" class="loginbt" onclick="loginBT()">
 				</div>
 				<div class = "option_box">
 					<input type = "button" value = "회원가입" class = "login_option" onclick = "">

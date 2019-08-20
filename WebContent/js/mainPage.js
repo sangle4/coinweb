@@ -87,6 +87,8 @@ $.ajax({
 	});
 
 $(document).ready(function(){ //페이지의 로딩이 완료된 후에 실행하는 스크립트 문장
+	//document.getElementById("idField").value = "";
+	document.getElementById("pwField").value = "";
 	getUSDrate();
 	$(".LiBTC").css({"background" : "#E0EFFF"});
 	fillTable('BTC');

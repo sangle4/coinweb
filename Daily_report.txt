@@ -93,6 +93,9 @@ css changed, top.jsp design changed
 Aug 19, 2019
 bithumb api json data changed, NAN error fixed.
 ///////////////////////////////////////////////////////////////
+Aug 20, 2019
+login button function created
+login function and dao, dto vitalization
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
@@ -104,6 +107,7 @@ bithumb api json data changed, NAN error fixed.
 3. Need to make another branch to manage this project
 4. Api functions simplify
 5. need to add coin picture in rank
+6. upbit, bithumb sometimes real-time price wrote INFINITY NUM, need to check
 
 ***BUG FIXED***
 1. net::ERR_NETWORK_IO_SUSPENDED error occured.
