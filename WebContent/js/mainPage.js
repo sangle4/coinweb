@@ -1,5 +1,6 @@
 var tableCoin = "BTC"; //10초 refresh시 사용자가 선택한 코인 탭을 기억하기 위한 변수
 var usdRate = 0; //달러 환율
+var userState = false;
 
 function numberWithCommas(x) { //KRW 단위 나눔 표시 함수
 	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

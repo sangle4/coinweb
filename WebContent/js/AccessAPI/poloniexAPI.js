@@ -39,7 +39,7 @@ function writeTablePoloniex(coin){
 		    	$('#poloniex_fluctate').html(temp);
 		    }
 		    else{
-		    	document.getElementById('poloniex_fluctate').style.color = "blue";
+		    	document.getElementById('poloniex_fluctate').style.color = "#0054FF";
 		    	temp += "▼  " + changeSize + "KRW　";
 		    	temp += " " + poloniex_coin_fluctate + "%";
 		    	

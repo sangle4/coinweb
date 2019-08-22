@@ -27,7 +27,7 @@ function writeTableCoinone(coin){
 		    	$('#coinone_fluctate').html(temp);
 		    }
 		    else{
-		    	document.getElementById('coinone_fluctate').style.color = "blue";
+		    	document.getElementById('coinone_fluctate').style.color = "#0054FF";
 		    	temp += "▼  " + numberWithCommas(coinone_coin_fluctate) + " KRW";
 		    	temp += "　" + fluctateRate + "%"
 		    	$('#coinone_fluctate').html(temp);

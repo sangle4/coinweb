@@ -49,7 +49,7 @@ function writeTableMarketCap(coin){
 		    	$('#marketcap_fluctate').html(temp);
 		    }
 		    else{
-		    	document.getElementById('marketcap_fluctate').style.color = "blue";
+		    	document.getElementById('marketcap_fluctate').style.color = "#0054FF";
 		    	temp += "▼  " + fluctateRate + "KRW　";
 		    	temp += " " + marketcap_coin_fluctate + "%";
 		    	$('#marketcap_fluctate').html(temp);

@@ -23,7 +23,7 @@ function writeTableBithumb(coin){
 		    	$('#bithumb_fluctate').html(temp);
 		    }
 		    else{
-		    	document.getElementById('bithumb_fluctate').style.color = "blue";
+		    	document.getElementById('bithumb_fluctate').style.color = "#0054FF";
 		    	temp += "▼  " + numberWithCommas(bithumb_coin_fluctate) + " KRW";
 		    	temp += "　" + fluctateRate + "%"
 		    	$('#bithumb_fluctate').html(temp);
