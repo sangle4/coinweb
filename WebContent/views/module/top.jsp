@@ -7,13 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<header>
-		<h1>
-			<a href="http://localhost:8080/testweb/" id="mainTitle"> <img
-				id="mainImage" src="img/main.png">oinWeb
-			</a>
-		</h1>
-	</header>
+	<!-- 헤더는 이미지파일의 경로때문에 제외  -->
 	
 	<ul class="mainNAV">
 		<!-- <i class="material-icons">cloud</i> -->

@@ -87,3 +87,35 @@
 	color : #1E60B5;
 	background-color : #F2F8FF;
 }
+
+.join_section {
+	display : inline-block;
+	border : 1px solid white;
+	width : 770px;
+	float : left;
+	margin : 0px 10px 10px 10px;
+	height : 50px;
+}
+
+.contents_join_box {
+	display : inline-block;
+	width : 700px;
+	height : 500px;
+	border : 1px solid white;
+	float : left;
+	
+	font-family: Gulim, Tahoma, Arial, sans-serif;
+	font-weight : normal;
+	font-size : 13px;
+	margin : 10px 10px 0px 10px;
+}
+
+.join_box_title {
+	margin : 0px;
+	width : 670px; 
+	height : 30px; 
+	background-color : #1E60B5; 
+	color : white; 
+	font-size : 20px; 
+	font-family: 'Baloo Chettan', cursive;
+}

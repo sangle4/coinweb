@@ -35,6 +35,14 @@
 </script>
 </head>
 <body>
+	<header>
+		<h1>
+			<a href="http://localhost:8080/testweb/" id="mainTitle"> <img
+				id="mainImage" src="img/main.png">oinWeb
+			</a>
+		</h1>
+	</header>
+	
 	<jsp:include page="views/module/top.jsp"></jsp:include> <!-- top부분을 불러옴 -->
 	
 	<div class="contents">
@@ -215,7 +223,10 @@
 	</div>
 
 	
-	<jsp:include page="views/module/output_test.jsp"></jsp:include>
+	<!-- <jsp:include page="views/module/output_test.jsp"></jsp:include> -->
+	<form name="ff" action="testPage.jsp" method="get" style = "margin : 0px 220px;">		
+		<input type="button" value="DB test button" onclick="hello()">
+	</form>
 	<jsp:include page="views/module/footer.jsp"></jsp:include> <!-- footer부분을 불러옴 -->
 </body>
 </html>

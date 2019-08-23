@@ -26,7 +26,7 @@
 					<input type="submit" value="로그인" class="loginbt" onclick="loginBT()">
 				</div>
 				<div class = "option_box">
-					<input type = "button" value = "회원가입" class = "login_option" onclick = "">
+					<input type = "button" value = "회원가입" class = "login_option" onclick = "location.href='views/join.jsp'">
 					<input type = "button" value = "아이디 /비밀번호 찾기" class = "login_option" onclick = "">
 				</div>
 			</form>
