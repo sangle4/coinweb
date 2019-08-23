@@ -5,26 +5,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8" http-equiv='refresh' content='0; url="http://localhost:8080/testweb'>
 <title>Insert title here</title>
 </head>
 <body>
 <%
-	request.setCharacterEncoding("utf-8");
-	String id = request.getParameter("id");
-	String pw = request.getParameter("pw");
-%>
-<%-- 아이디 : <%=id %><br> --%>
-<%-- 비번 : <%=pw %><br> --%>
-<br>
-<%
-	 user_dao userdao = new user_dao();  
-%>
+String id = request.getParameter("id");
+String pw = request.getParameter("password");
 
-<jsp:useBean id = "dao" class = "dao.user_dao"/><br>
-<jsp:setProperty property="*" name = "userdao"/><br>
+user_dto dto = new user_dto();
+dto.setID(id);
+dto.setPassword(pw);
+dto.setName("iri");
+dto.setEmail("sangle4@naver.com");
 
-아이디 : <jsp:getProperty property = "id" name = "userdao"/><br>
-비밀번호 : <jsp:getProperty property = "pw" name = "userdao"/><br>
+user_dao dao = new user_dao();
+	
+dao.User_Insert(dto);
+%>
+<script>
+alert("회원가입이 완료되었습니다.");
+</script>
+Page Loading....
 </body>
 </html>

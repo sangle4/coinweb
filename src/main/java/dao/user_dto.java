@@ -16,6 +16,14 @@ public class user_dto {
         this.nickname = nickname;
         this.email = email;
     }
+    public user_dto() {
+    	this.num = 0;
+        this.id = "";
+        this.password = "";
+        this.name = "";
+        this.nickname = "";
+        this.email = "";
+    }
 //getter, setter
     public int getNum() {
     	return num;

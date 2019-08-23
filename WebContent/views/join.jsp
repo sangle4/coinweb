@@ -112,14 +112,14 @@
 				
 				<form class="join_form" action="join_process.jsp" method="POST" onsubmit = "return check(this)" style = "text-align : left;">
 					ID
-					<input name="" name = "id" style = "display : inline-block;">
+					<input name="id" style = "display : inline-block;">
 					<input type="button" value="아이디 중복확인" onclick="id_check()" style = "display : block;">
 					PW
-					<input type="password" name = "pw" style = "display : block;">
+					<input type="password" name="password" style = "display : block;">
 					PW Verity
-					<input type="password" name = "pw" style = "display : block;">
+					<input type="password" name="password" style = "display : block;">
 					
-					<input type="button" value="회원가입" class="loginbt" onclick="joinBT()">
+					<input type="submit" value="회원가입" class="loginbt">
 				</form>
 			</div>
 		</div>
