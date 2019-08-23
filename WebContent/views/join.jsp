@@ -110,16 +110,21 @@
 			<div style = "width : 670px; border : 1px solid #BEE0FF; height : 600px;">
 				<div class = "join_box_title">Join Us</div>
 				
-				<form class="join_form" action="join_process.jsp" method="POST" onsubmit = "return check(this)" style = "text-align : left;">
-					ID
-					<input name="id" style = "display : inline-block;">
-					<input type="button" value="아이디 중복확인" onclick="id_check()" style = "display : block;">
-					PW
-					<input type="password" name="password" style = "display : block;">
-					PW Verity
-					<input type="password" name="password" style = "display : block;">
+				<form class="join_form" action="join_process.jsp" method="POST" onsubmit = "return check(this)" style = "height : 400px; text-align : left;">
+					<div class = "join_tag">ID</div>
+					<input class = "join_input" name="id" style = "display : inline-block;">
+					<input type="button" class = "checkBT" value="중복확인" onclick="id_check()">
+					<div class = "join_tag">PW</div>
+					<input class = "join_input" type="password" name="password">
+					<div class = "join_tag">PW Verity</div>
+					<input class = "join_input" type="password" name="password">
+					<div class = "join_tag">Nickname</div>
+					<input class = "join_input" name="nickname" style = "display : inline-block;">
+					<div class = "join_tag">Email</div>
+					<input class = "join_input" name="email" style = "display : inline-block;">
 					
-					<input type="submit" value="회원가입" class="loginbt">
+					<div></div>
+					<input type="submit" value="회원가입" class="checkBT">
 				</form>
 			</div>
 		</div>

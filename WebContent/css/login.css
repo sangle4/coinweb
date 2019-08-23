@@ -119,3 +119,30 @@
 	font-size : 20px; 
 	font-family: 'Baloo Chettan', cursive;
 }
+
+.join_tag {
+	font-family: 'Baloo Chettan', cursive;
+	color : #1E60B5;
+	margin : 10px;
+	font-size : 25px;
+	width : 200px;
+	display : inline-block;
+}
+
+.join_input{
+	width : 300px;
+	height : 30px;
+	margin : 10px;
+	border : 1px solid #1E60B5;
+	border-radius : 6px;
+}
+
+.checkBT {
+	width : 70px;
+	height : 30px;
+	margin : 10px;
+	border : 1px solid #1E60B5;
+	border-radius : 6px;
+	background-color : white;
+	color : #1E60B5;
+}

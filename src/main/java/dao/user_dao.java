@@ -38,8 +38,9 @@ public class user_dao {
                 String name = rs.getString("name");
                 String nickname = rs.getString("nickname");
                 String email = rs.getString("email");
+                int admin = rs.getInt("admin");
 
-                user_dto dto = new user_dto(num, id, password, name, nickname, email);
+                user_dto dto = new user_dto(num, id, password, name, nickname, email, admin);
                 dtos.add(dto);
             }
 
@@ -69,12 +70,13 @@ public class user_dao {
         try {
             con = DriverManager.getConnection(server + "/" + database + "?useSSL=false", Suser_name, Spassword);
             
-            String sql = "INSERT INTO USER (id, Password, Name, Nickname, Email) VALUES(";
+            String sql = "INSERT INTO USER (id, Password, Name, Nickname, Email, Admin) VALUES(";
             sql += "\"" + userdto.getID() + "\"";
             sql += ", \""+ userdto.getPassword() + "\"";
             sql += ", \""+ userdto.getName() + "\"";
             sql += ", \""+ userdto.getNickname() + "\"";
-            sql += ", \""+ userdto.getEmail() + "\")";
+            sql += ", \""+ userdto.getEmail() + "\"";
+            sql += ", \""+ 0 + "\")";
             
             stmt = con.prepareStatement(sql);
             stmt.execute(sql);

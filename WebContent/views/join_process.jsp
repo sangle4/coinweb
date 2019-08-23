@@ -6,7 +6,8 @@
 <html>
 <head>
 <meta charset="UTF-8" http-equiv='refresh' content='0; url="http://localhost:8080/testweb'>
-<title>Insert title here</title>
+<title>Coin Web</title>
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
 <%
@@ -18,6 +19,7 @@ dto.setID(id);
 dto.setPassword(pw);
 dto.setName("iri");
 dto.setEmail("sangle4@naver.com");
+dto.setAdmin(0);
 
 user_dao dao = new user_dao();
 	
