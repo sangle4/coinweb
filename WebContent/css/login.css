@@ -146,3 +146,14 @@
 	background-color : white;
 	color : #1E60B5;
 }
+
+.submitBT {
+	width : 120px;
+	height : 30px;
+	margin : 10px;
+	border : 1px solid #1E60B5;
+	border-radius : 6px;
+	background-color : white;
+	color : #1E60B5;
+	float : right;
+}

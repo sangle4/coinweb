@@ -118,13 +118,14 @@
 					<input class = "join_input" type="password" name="password">
 					<div class = "join_tag">PW Verity</div>
 					<input class = "join_input" type="password" name="password">
+					<div class = "join_tag">Name</div>
+					<input class = "join_input" name="name" style = "display : inline-block;">
 					<div class = "join_tag">Nickname</div>
 					<input class = "join_input" name="nickname" style = "display : inline-block;">
 					<div class = "join_tag">Email</div>
 					<input class = "join_input" name="email" style = "display : inline-block;">
 					
-					<div></div>
-					<input type="submit" value="회원가입" class="checkBT">
+					<input type="submit" value="회원가입" class="submitBT">
 				</form>
 			</div>
 		</div>

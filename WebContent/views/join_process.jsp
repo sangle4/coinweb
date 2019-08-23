@@ -13,12 +13,16 @@
 <%
 String id = request.getParameter("id");
 String pw = request.getParameter("password");
+String name = request.getParameter("name");
+String nickname = request.getParameter("nickname");
+String email = request.getParameter("email");
 
 user_dto dto = new user_dto();
 dto.setID(id);
 dto.setPassword(pw);
-dto.setName("iri");
-dto.setEmail("sangle4@naver.com");
+dto.setName(name);
+dto.setNickname(nickname);
+dto.setEmail(email);
 dto.setAdmin(0);
 
 user_dao dao = new user_dao();
