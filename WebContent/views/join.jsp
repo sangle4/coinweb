@@ -24,11 +24,8 @@
 <script src="../js/userLogin.js"></script> <!-- 유저 로그인관련 js파일 -->
 <script src="../js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 <script>
-	function joinBT() {
-		
-	}
 	function id_check() {
-		
+		alert("존재하는 아이디입니다. \n다른 아이디를 사용하세요.");
 	}
 </script>
 </head>
@@ -116,7 +113,7 @@
 					<input type="button" class = "checkBT" value="중복확인" onclick="id_check()">
 					<div class = "join_tag">PW</div>
 					<input class = "join_input" type="password" name="password">
-					<div class = "join_tag">PW Verity</div>
+					<div class = "join_tag">PW verify</div>
 					<input class = "join_input" type="password" name="password">
 					<div class = "join_tag">Name</div>
 					<input class = "join_input" name="name" style = "display : inline-block;">
