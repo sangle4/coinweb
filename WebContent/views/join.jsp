@@ -26,6 +26,24 @@
 <script>
 	function id_check() {
 		alert("존재하는 아이디입니다. \n다른 아이디를 사용하세요.");
+		var selected_id = document.getElementById("user_selected_id").value;
+		
+		$.ajax({
+			type : "POST",
+			url : "user_selected_id",
+			data : {"id" : selected_id},
+			dataType : "text",
+			success : function(data){
+				if(data == "1"){
+					alert("사용가능한 아이디입니다.");
+				} else{
+					alert("중복된 아이디입니다.\n다른 아이디를 입력해주세요.");
+				},
+				error : function(){
+					alert("ID check function error!");
+				}
+			}
+		});
 	}
 	
 	function pwConfirm() {
@@ -34,9 +52,9 @@
 		var inner2 = document.getElementById("pw2_inner");
 		
 		if(pw1 != pw2) //password confirm 
-			inner2.innerHTML = "비밀번호가 다릅니다.";
+			inner2.innerHTML = "<i class=\"material-icons md-11\">report_problem</i> 비밀번호가 다릅니다.";
 		else
-			inner2.innerHTML = "비밀번호가 일치합니다.";
+			inner2.innerHTML = "<i class=\"material-icons md-11\">check_circle_outline</i> 비밀번호가 일치합니다.";
 	}
 	
 	function pwCondition() {
@@ -44,10 +62,10 @@
 		var inner = document.getElementById("pw1_inner");
 		
 		if(pw1.length < 6){
-			inner.innerHTML = "비밀번호는 최소 6자리 이상이어야 합니다.";
+			inner.innerHTML = "<i class=\"material-icons md-11\">report_problem</i> 비밀번호는 최소 6자리 이상이어야 합니다.";
 		}
 		else {
-			inner.innerHTML = "사용가능한 비밀번호입니다.";
+			inner.innerHTML = "<i class=\"material-icons md-11\">check_circle_outline</i> 사용가능한 비밀번호입니다.";
 		}
 	}
 </script>
@@ -132,7 +150,7 @@
 				
 				<form class="join_form" action="join_process.jsp" method="POST" onsubmit = "return check(this)" style = "height : 400px; text-align : left;">
 					<div class = "join_tag">ID</div>
-					<input class = "join_input" name="id" style = "display : inline-block;">
+					<input class = "join_input" name="id" id = "user_selected_id" style = "display : inline-block;">
 					<input type="button" class = "checkBT" value="중복확인" onclick="id_check()">
 					
 					<div class = "join_tag">PW</div>
