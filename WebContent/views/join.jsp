@@ -27,6 +27,29 @@
 	function id_check() {
 		alert("존재하는 아이디입니다. \n다른 아이디를 사용하세요.");
 	}
+	
+	function pwConfirm() {
+		var pw1 = document.getElementById("pw1").value;
+		var pw2 = document.getElementById("pw2").value;
+		var inner2 = document.getElementById("pw2_inner");
+		
+		if(pw1 != pw2) //password confirm 
+			inner2.innerHTML = "비밀번호가 다릅니다.";
+		else
+			inner2.innerHTML = "비밀번호가 일치합니다.";
+	}
+	
+	function pwCondition() {
+		var pw1 = document.getElementById("pw1").value;
+		var inner = document.getElementById("pw1_inner");
+		
+		if(pw1.length < 6){
+			inner.innerHTML = "비밀번호는 최소 6자리 이상이어야 합니다.";
+		}
+		else {
+			inner.innerHTML = "사용가능한 비밀번호입니다.";
+		}
+	}
 </script>
 </head>
 <body>
@@ -111,16 +134,23 @@
 					<div class = "join_tag">ID</div>
 					<input class = "join_input" name="id" style = "display : inline-block;">
 					<input type="button" class = "checkBT" value="중복확인" onclick="id_check()">
+					
 					<div class = "join_tag">PW</div>
-					<input class = "join_input" type="password" name="password">
+					<input class = "join_input" type="password" name="password" id = "pw1" onkeyup="pwCondition()">
+					<span class = "inner_text" id = "pw1_inner"></span>
 					<div class = "join_tag">PW verify</div>
-					<input class = "join_input" type="password" name="password">
+					<input class = "join_input" type="password" name="password" id = "pw2" onkeyup="pwConfirm()">
+					<span class = "inner_text" id = "pw2_inner"></span>
+					
 					<div class = "join_tag">Name</div>
 					<input class = "join_input" name="name" style = "display : inline-block;">
+					<span class = "inner_text"></span>
 					<div class = "join_tag">Nickname</div>
 					<input class = "join_input" name="nickname" style = "display : inline-block;">
+					<span class = "inner_text"></span>
 					<div class = "join_tag">Email</div>
 					<input class = "join_input" name="email" style = "display : inline-block;">
+					<span class = "inner_text"></span>
 					
 					<input type="submit" value="회원가입" class="submitBT">
 				</form>

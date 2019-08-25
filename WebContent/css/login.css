@@ -125,12 +125,12 @@
 	color : #1E60B5;
 	margin : 10px;
 	font-size : 25px;
-	width : 200px;
+	width : 150px;
 	display : inline-block;
 }
 
 .join_input{
-	width : 300px;
+	width : 270px;
 	height : 30px;
 	margin : 10px;
 	border : 1px solid #1E60B5;
@@ -145,6 +145,13 @@
 	border-radius : 6px;
 	background-color : white;
 	color : #1E60B5;
+}
+
+
+.inner_text {
+	font-size : 10px;
+	display : block;
+	margin : 0px 10px 0px 185px;
 }
 
 .submitBT {
