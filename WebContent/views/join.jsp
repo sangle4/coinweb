@@ -25,8 +25,14 @@
 <script src="../js/mainPage.js"></script> <!-- 페이지 초기세팅 js파일  -->
 <script>
 	function id_check() {
-		alert("존재하는 아이디입니다. \n다른 아이디를 사용하세요.");
 		var selected_id = document.getElementById("user_selected_id").value;
+		if(selected_id == ""){
+			alert("아이디를 입력하세요.");
+		} else {
+			alert("존재하는 아이디입니다. \n다른 아이디를 사용하세요.");	
+		}
+		
+		/*
 		
 		$.ajax({
 			type : "POST",
@@ -44,6 +50,8 @@
 				}
 			}
 		});
+		
+		*/
 	}
 	
 	function pwConfirm() {
@@ -149,27 +157,28 @@
 				<div class = "join_box_title">Join Us</div>
 				
 				<form class="join_form" action="join_process.jsp" method="POST" onsubmit = "return check(this)" style = "height : 400px; text-align : left;">
-					<div class = "join_tag">ID</div>
+					<div class = "join_tag">*ID</div>
 					<input class = "join_input" name="id" id = "user_selected_id" style = "display : inline-block;">
 					<input type="button" class = "checkBT" value="중복확인" onclick="id_check()">
 					
-					<div class = "join_tag">PW</div>
+					<div class = "join_tag">*PW</div>
 					<input class = "join_input" type="password" name="password" id = "pw1" onkeyup="pwCondition()">
 					<span class = "inner_text" id = "pw1_inner"></span>
-					<div class = "join_tag">PW verify</div>
+					<div class = "join_tag">*PW verify</div>
 					<input class = "join_input" type="password" name="password" id = "pw2" onkeyup="pwConfirm()">
 					<span class = "inner_text" id = "pw2_inner"></span>
 					
-					<div class = "join_tag">Name</div>
+					<div class = "join_tag">*Name</div>
 					<input class = "join_input" name="name" style = "display : inline-block;">
 					<span class = "inner_text"></span>
-					<div class = "join_tag">Nickname</div>
+					<div class = "join_tag">&nbsp;Nickname</div>
 					<input class = "join_input" name="nickname" style = "display : inline-block;">
 					<span class = "inner_text"></span>
-					<div class = "join_tag">Email</div>
+					<div class = "join_tag">*Email</div>
 					<input class = "join_input" name="email" style = "display : inline-block;">
 					<span class = "inner_text"></span>
 					
+					<span class = "join_info">*표시 항목은 필수사항입니다.</span>
 					<input type="submit" value="회원가입" class="submitBT">
 				</form>
 			</div>

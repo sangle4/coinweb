@@ -167,3 +167,10 @@
 	color : #1E60B5;
 	float : right;
 }
+
+.join_info {
+	margin : 20px 0px 0px 20px;
+	font-size : 12px;
+	display : inline-block;
+	color : #1E60B5;
+}
