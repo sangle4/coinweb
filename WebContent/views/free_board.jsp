@@ -13,16 +13,16 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Ubuntu&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap" rel="stylesheet">
-<script src="js/AccessAPI/binanceAPI.js"></script><!-- 바이낸스 API js파일  -->
-<script src="js/AccessAPI/bithumbAPI.js"></script><!-- 빗썸 API js파일  -->
-<script src="js/AccessAPI/upbitAPI.js"></script><!-- 업비트 API js파일  -->
-<script src="js/AccessAPI/coinmarketcapAPI.js"></script><!-- 마켓캡 API js파일  -->
-<script src="js/AccessAPI/coinoneAPI.js"></script><!-- 코인원 API js파일  -->
-<script src="js/AccessAPI/korbitAPI.js"></script><!-- 코빗 API js파일  -->
-<script src="js/AccessAPI/poloniexAPI.js"></script><!-- 폴로닉스 API js파일  -->
-<script src="js/AccessAPI/upbitAPI.js"></script><!-- 업비트 API js파일  -->
-<script src="js/tradeCalcul.js"></script><!-- 거래 계산식모음 스크립트파일 -->
-<script src="js/mainPage.js"></script><!-- 페이지 초기세팅 js파일  -->
+<script src="../js/AccessAPI/binanceAPI.js"></script><!-- 바이낸스 API js파일  -->
+<script src="../js/AccessAPI/bithumbAPI.js"></script><!-- 빗썸 API js파일  -->
+<script src="../js/AccessAPI/upbitAPI.js"></script><!-- 업비트 API js파일  -->
+<script src="../js/AccessAPI/coinmarketcapAPI.js"></script><!-- 마켓캡 API js파일  -->
+<script src="../js/AccessAPI/coinoneAPI.js"></script><!-- 코인원 API js파일  -->
+<script src="../js/AccessAPI/korbitAPI.js"></script><!-- 코빗 API js파일  -->
+<script src="../js/AccessAPI/poloniexAPI.js"></script><!-- 폴로닉스 API js파일  -->
+<script src="../js/AccessAPI/upbitAPI.js"></script><!-- 업비트 API js파일  -->
+<script src="../js/tradeCalcul.js"></script><!-- 거래 계산식모음 스크립트파일 -->
+<script src="../js/mainPage.js"></script><!-- 페이지 초기세팅 js파일  -->
 <script>
 	function hello() {
 		// form태그는 id로 찾지 않고 부여한 name으로 간단하게 검색가능
@@ -35,6 +35,14 @@
 </script>
 </head>
 <body>
+	<header>
+		<h1>
+			<a href="http://localhost:8080/testweb/" id="mainTitle"> <img
+				id="mainImage" src="../img/main.png">oinWeb
+			</a>
+		</h1>
+	</header>
+	
 	<jsp:include page="../views/module/top.jsp"></jsp:include>
 	
 	<div class="contents">
