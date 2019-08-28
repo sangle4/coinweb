@@ -111,15 +111,7 @@
 						<td id="poloniex_premium"></td>
 						<td id="poloniex_volume"></td>
 					</tr>
-					<!-- 
-        				<tr>
-            				<th>추가</th>
-            				<td></td> 
-            				<td></td> 
-            				<td></td> 
-            				<td></td> 
-        				</tr>
-        				 -->
+
 				</tbody>
 				<tfoot>
 					<tr id="tradeTR">
