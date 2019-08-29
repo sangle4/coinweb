@@ -4,9 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Coin Web</title>
 </head>
 <body>
-
+	<header>
+		<h1>
+			<a href="http://localhost:8080/testweb/" id="mainTitle"> <img
+				id="mainImage" src="../img/main.png">oinWeb
+			</a>
+		</h1>
+	</header>
+	
+	<jsp:include page="../views/module/top.jsp"></jsp:include>
 </body>
 </html>

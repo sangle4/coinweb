@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Coin Web</title>
 </head>
 <body>
 	<div class="login_tab">
