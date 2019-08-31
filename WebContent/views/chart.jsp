@@ -16,7 +16,7 @@
 	</header>
 	
 	<div>
-		
+		test
 	</div>
 	
 	<jsp:include page="../views/module/top.jsp"></jsp:include>
