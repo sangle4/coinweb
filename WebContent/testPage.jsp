@@ -20,7 +20,7 @@
             out.println(dto.getEmail());
          }
          
-         user_dto test = new user_dto(1, "test1", "test2","test3","test4", "test5");
+         user_dto test = new user_dto(1, "test1", "test2","test3","test4", "test5", 0);
          userdao.User_Insert(test);
       %>
    </body>
