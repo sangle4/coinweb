@@ -223,13 +223,14 @@
 
 	</div>
 
-	
+	<jsp:include page="views/module/footer.jsp"></jsp:include> <!-- footer부분을 불러옴 -->
+</body>
+</html>
+
+<!-- 데이터베이스 테스트 버튼, footer에 입력 -->
 	<!-- <jsp:include page="views/module/output_test.jsp"></jsp:include> -->
 	<!-- 
 	<form name="ff" action="testPage.jsp" method="get" style = "margin : 0px 220px;">		
 		<input type="button" value="DB test button" onclick="hello()">
 	</form>
 	 -->
-	<jsp:include page="views/module/footer.jsp"></jsp:include> <!-- footer부분을 불러옴 -->
-</body>
-</html>
