@@ -178,7 +178,7 @@
 					<input class = "join_input" name="email" style = "display : inline-block;">
 					<span class = "inner_text"></span>
 					
-					<span class = "join_info">*표시 항목은 필수사항입니다.</span>
+					<span class = "join_info">* 표시 항목은 필수사항입니다.</span>
 					<input type="submit" value="회원가입" class="submitBT">
 				</form>
 			</div>
