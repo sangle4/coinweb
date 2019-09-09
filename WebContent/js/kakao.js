@@ -1,3 +1,4 @@
+/*
 int solution1(string s) {
 	int answer = s.length();
 
@@ -92,7 +93,7 @@ vector<int> solution(vector<string> v1, vector<string> v2) {
 
 
 int main() {
-	/*
+	
 	string s = "";
 	cin >> s;
 	int ans = solution1(s);
@@ -116,7 +117,7 @@ int main() {
 	cout << ans << endl;
 	*/
 
-
+/*
 	vector <string> v1 = {};
 	vector <string> v2 = {};
 	string s = "";
@@ -147,7 +148,7 @@ int main() {
 
 	return 0;
 	
-	/*
+	
 	 #include <string>
 #include <vector>
 #include <stdio.h>
@@ -156,5 +157,6 @@ int main() {
 
 using namespace std;
 
-	 */
+	 
 }
+*/
