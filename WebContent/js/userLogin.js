@@ -14,10 +14,26 @@ function findIDBT() {
 	if(document.getElementById("username").value == ""){
 		alert("가입한 사용자 이름을 입력하세요.");
 	}
+	else{
+		checkNAMEinDB(document.getElementById("username").value);
+	}
 }
 
 function findPWB() {
 	if(document.getElementById("userid").value == ""){
 		alert("가입한 사용자 아이디를 입력하세요.");
 	}
+	else{
+		checkIDinDB(document.getElementById("userid").value);
+	}
+}
+
+///////
+
+function checkNAMEinDB(userName) {
+	
+}
+
+function checkIDinDB(userID) {
+	
 }
