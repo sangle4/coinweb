@@ -27,7 +27,7 @@
 	function hello() {
 		// form태그는 id로 찾지 않고 부여한 name으로 간단하게 검색가능
 		var ff = document.ff;
-
+		//dcdc
 		// form태그 안의 값들은 따로 값을 검색하지 않아도 넘어간다
 		// submit() : action에 지정된 주소로 파라미터와 함께 전송하겠다는 의미
 		ff.submit();
